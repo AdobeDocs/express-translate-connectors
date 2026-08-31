@@ -1,5 +1,5 @@
 - pathPrefix:
-    - /dev-docs-template/
+    - /express/translate-connectors/docs/
 
 - pages:
     - [Analytics](index.md)
