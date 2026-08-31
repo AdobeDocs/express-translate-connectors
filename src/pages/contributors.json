@@ -1,98 +1,384 @@
 {
-  "total": 13,
+  "total": 53,
   "offset": 0,
-  "limit": 13,
+  "limit": 53,
   "data": [
     {
       "page": "/",
       "avatars": [
-        "https://avatars.githubusercontent.com/u/14320591?v=4"
+        "https://avatars.githubusercontent.com/u/359935?v=4",
+        "https://avatars.githubusercontent.com/u/41382203?v=4"
       ],
-      "lastUpdated": "8/31/2026"
-    },
-    {
-      "page": "/api/",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/14320591?v=4"
-      ],
-      "lastUpdated": "8/31/2026"
-    },
-    {
-      "page": "/api/1-4",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/14320591?v=4"
-      ],
-      "lastUpdated": "8/31/2026"
+      "lastUpdated": "5/19/2026"
     },
     {
       "page": "/config",
       "avatars": [
-        "https://avatars.githubusercontent.com/u/14320591?v=4"
+        "https://avatars.githubusercontent.com/u/359935?v=4",
+        "https://avatars.githubusercontent.com/u/41382203?v=4"
       ],
-      "lastUpdated": "8/31/2026"
+      "lastUpdated": "5/19/2026"
+    },
+    {
+      "page": "/config copy",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/359935?v=4"
+      ],
+      "lastUpdated": "3/31/2026"
     },
     {
       "page": "/guides/",
       "avatars": [
-        "https://avatars.githubusercontent.com/u/14320591?v=4"
+        "https://avatars.githubusercontent.com/u/359935?v=4",
+        "https://avatars.githubusercontent.com/u/41382203?v=4"
       ],
-      "lastUpdated": "8/31/2026"
+      "lastUpdated": "5/19/2026"
     },
     {
-      "page": "/guides/dummy_metrics_api/",
+      "page": "/guides/admin-and-distribution",
       "avatars": [
-        "https://avatars.githubusercontent.com/u/14320591?v=4"
+        "https://avatars.githubusercontent.com/u/359935?v=4"
       ],
-      "lastUpdated": "8/31/2026"
+      "lastUpdated": "5/1/2026"
     },
     {
-      "page": "/guides/dummy_oauth_client/",
+      "page": "/guides/authentication",
       "avatars": [
-        "https://avatars.githubusercontent.com/u/14320591?v=4"
+        "https://avatars.githubusercontent.com/u/359935?v=4"
       ],
-      "lastUpdated": "8/31/2026"
+      "lastUpdated": "4/21/2026"
     },
     {
-      "page": "/guides/dummy_using_postman/",
+      "page": "/guides/build-your-first-translate-connector",
       "avatars": [
-        "https://avatars.githubusercontent.com/u/14320591?v=4"
+        "https://avatars.githubusercontent.com/u/359935?v=4"
       ],
-      "lastUpdated": "8/31/2026"
+      "lastUpdated": "4/30/2026"
     },
     {
-      "page": "/guides/migrating/",
+      "page": "/guides/connector-playground",
       "avatars": [
-        "https://avatars.githubusercontent.com/u/14320591?v=4"
+        "https://avatars.githubusercontent.com/u/359935?v=4"
       ],
-      "lastUpdated": "8/31/2026"
+      "lastUpdated": "5/19/2026"
+    },
+    {
+      "page": "/guides/connectors-overview",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/359935?v=4"
+      ],
+      "lastUpdated": "4/30/2026"
+    },
+    {
+      "page": "/guides/connectors-vs-add-ons",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/359935?v=4"
+      ],
+      "lastUpdated": "5/4/2026"
+    },
+    {
+      "page": "/guides/dash-test",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/359935?v=4"
+      ],
+      "lastUpdated": "4/13/2026"
+    },
+    {
+      "page": "/guides/endpoint-setup",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/359935?v=4"
+      ],
+      "lastUpdated": "5/19/2026"
+    },
+    {
+      "page": "/guides/getting-started",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/359935?v=4",
+        "https://avatars.githubusercontent.com/u/41382203?v=4"
+      ],
+      "lastUpdated": "5/21/2026"
+    },
+    {
+      "page": "/guides/manifest-walkthrough",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/359935?v=4"
+      ],
+      "lastUpdated": "4/27/2026"
+    },
+    {
+      "page": "/guides/overview",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/359935?v=4"
+      ],
+      "lastUpdated": "5/19/2026"
+    },
+    {
+      "page": "/guides/prerelease-overview",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/359935?v=4"
+      ],
+      "lastUpdated": "4/16/2026"
+    },
+    {
+      "page": "/guides/submission/listing-types",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/359935?v=4"
+      ],
+      "lastUpdated": "4/13/2026"
+    },
+    {
+      "page": "/guides/submit",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/359935?v=4"
+      ],
+      "lastUpdated": "5/19/2026"
+    },
+    {
+      "page": "/guides/submit-an-internal-listing",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/359935?v=4"
+      ],
+      "lastUpdated": "5/17/2026"
+    },
+    {
+      "page": "/guides/test-and-troubleshoot",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/359935?v=4"
+      ],
+      "lastUpdated": "5/4/2026"
+    },
+    {
+      "page": "/guides/test-your-service",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/359935?v=4"
+      ],
+      "lastUpdated": "5/19/2026"
+    },
+    {
+      "page": "/guides/workflow-concepts",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/359935?v=4"
+      ],
+      "lastUpdated": "5/4/2026"
+    },
+    {
+      "page": "/guides2/",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/359935?v=4"
+      ],
+      "lastUpdated": "4/13/2026"
+    },
+    {
+      "page": "/guides2/building-translate-connector/",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/359935?v=4"
+      ],
+      "lastUpdated": "4/13/2026"
+    },
+    {
+      "page": "/guides2/connector-playground/",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/359935?v=4"
+      ],
+      "lastUpdated": "4/13/2026"
+    },
+    {
+      "page": "/guides2/connectors-vs-addons/",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/359935?v=4"
+      ],
+      "lastUpdated": "4/13/2026"
+    },
+    {
+      "page": "/guides2/getting-started/",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/359935?v=4"
+      ],
+      "lastUpdated": "4/13/2026"
+    },
+    {
+      "page": "/guides2/manifest-walkthrough/",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/359935?v=4"
+      ],
+      "lastUpdated": "4/13/2026"
+    },
+    {
+      "page": "/guides2/overview/",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/359935?v=4"
+      ],
+      "lastUpdated": "4/13/2026"
+    },
+    {
+      "page": "/guides2/submission/",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/359935?v=4"
+      ],
+      "lastUpdated": "4/13/2026"
+    },
+    {
+      "page": "/guides2/submission/listing-types",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/359935?v=4"
+      ],
+      "lastUpdated": "4/13/2026"
+    },
+    {
+      "page": "/guides2/testing/",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/359935?v=4"
+      ],
+      "lastUpdated": "4/13/2026"
+    },
+    {
+      "page": "/mvp/",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/359935?v=4"
+      ],
+      "lastUpdated": "4/13/2026"
+    },
+    {
+      "page": "/mvp/admin-and-distribution",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/359935?v=4"
+      ],
+      "lastUpdated": "4/13/2026"
+    },
+    {
+      "page": "/mvp/build-your-first-translate-connector",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/359935?v=4"
+      ],
+      "lastUpdated": "4/13/2026"
+    },
+    {
+      "page": "/mvp/connector-playground",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/359935?v=4"
+      ],
+      "lastUpdated": "4/13/2026"
+    },
+    {
+      "page": "/mvp/connectors-vs-add-ons",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/359935?v=4"
+      ],
+      "lastUpdated": "4/13/2026"
+    },
+    {
+      "page": "/mvp/getting-started",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/359935?v=4"
+      ],
+      "lastUpdated": "4/13/2026"
+    },
+    {
+      "page": "/mvp/manifest-walkthrough",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/359935?v=4"
+      ],
+      "lastUpdated": "4/13/2026"
+    },
+    {
+      "page": "/mvp/overview",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/359935?v=4"
+      ],
+      "lastUpdated": "4/13/2026"
+    },
+    {
+      "page": "/mvp/submit-an-internal-listing",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/359935?v=4"
+      ],
+      "lastUpdated": "4/13/2026"
+    },
+    {
+      "page": "/mvp/test-and-troubleshoot",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/359935?v=4"
+      ],
+      "lastUpdated": "4/13/2026"
+    },
+    {
+      "page": "/reference/",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/359935?v=4"
+      ],
+      "lastUpdated": "5/19/2026"
+    },
+    {
+      "page": "/reference/changelog/",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/359935?v=4"
+      ],
+      "lastUpdated": "5/20/2026"
+    },
+    {
+      "page": "/reference/manifest-schema/",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/359935?v=4"
+      ],
+      "lastUpdated": "5/21/2026"
+    },
+    {
+      "page": "/reference/manifest-schema/index-basic",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/359935?v=4"
+      ],
+      "lastUpdated": "4/27/2026"
+    },
+    {
+      "page": "/reference/manifest-schema/manifest-overview",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/359935?v=4"
+      ],
+      "lastUpdated": "4/27/2026"
+    },
+    {
+      "page": "/reference/translate-api/",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/359935?v=4"
+      ],
+      "lastUpdated": "5/19/2026"
+    },
+    {
+      "page": "/reference/translate-api/interactive/custom",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/359935?v=4"
+      ],
+      "lastUpdated": "4/9/2026"
     },
     {
       "page": "/support/",
       "avatars": [
-        "https://avatars.githubusercontent.com/u/14320591?v=4"
+        "https://avatars.githubusercontent.com/u/359935?v=4",
+        "https://avatars.githubusercontent.com/u/41382203?v=4"
       ],
-      "lastUpdated": "8/31/2026"
-    },
-    {
-      "page": "/support/community/",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/14320591?v=4"
-      ],
-      "lastUpdated": "8/31/2026"
-    },
-    {
-      "page": "/support/contribute/",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/14320591?v=4"
-      ],
-      "lastUpdated": "8/31/2026"
+      "lastUpdated": "5/19/2026"
     },
     {
       "page": "/support/FAQ/",
       "avatars": [
-        "https://avatars.githubusercontent.com/u/14320591?v=4"
+        "https://avatars.githubusercontent.com/u/359935?v=4",
+        "https://avatars.githubusercontent.com/u/41382203?v=4"
       ],
-      "lastUpdated": "8/31/2026"
+      "lastUpdated": "3/31/2026"
+    },
+    {
+      "page": "/support/faqs/",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/359935?v=4"
+      ],
+      "lastUpdated": "5/19/2026"
+    },
+    {
+      "page": "/support/troubleshooting/",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/359935?v=4"
+      ],
+      "lastUpdated": "5/19/2026"
     }
   ],
   ":type": "sheet"
