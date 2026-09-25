@@ -51,4 +51,4 @@ hideBreadcrumbNav: true
 
 ### Added
 
-- Initial release of the [Connector Playground](../../guides/connector-playground.md) for configuring and testing translateconnectors inside Adobe Express.
+- Initial release of the [Connector Playground](../../guides/connector-playground.md) for configuring and testing translate connectors inside Adobe Express.

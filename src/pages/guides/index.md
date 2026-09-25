@@ -13,7 +13,7 @@ hideBreadcrumbNav: true
 
 <Superhero slots="heading, text" background="linear-gradient(180deg, #c946eb, #6372f5)" variant="default" textColor="white"/>
 
-# Adobe Express TranslateConnectors
+# Adobe Express Translate Connectors
 
 Build native service integrations for Adobe Express using a declarative, manifest-driven connector framework. Connect your translation service directly into Adobe Express workflows without building a panel or UI from scratch.
 
