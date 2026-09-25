@@ -12,7 +12,7 @@ keywords:
 nav-title: Manifest Reference
 content_type: reference
 sidebar: adobe-express-connectors
-last-updated: 2026-07-20
+last-updated: 2026-09-25
 hideBreadcrumbNav: true
 ---
 
@@ -240,11 +240,11 @@ These fields identify your connector to Adobe Express. They appear at the root o
 | :---- | :---- | :---- | :---- |
 | `id` | string | Yes | Unique identifier for your connector. Letters, numbers, and hyphens only. 2-30 characters. Example: `"acme-translate"`. |
 | `name` | string | Yes | Display name shown in the Adobe Express UI. Letters, numbers, and spaces only (no hyphens or special characters). Must start with a letter or number. 3-31 characters total. Example: `"Acme Translate"`. |
-| `type` | string | Yes | Connector type. Must be `"Translate"` for the current prerelease. |
+| `type` | string | Yes | Connector type. Must be `"Translate"`. |
 | `version` | string | Yes | Semantic version of your connector in `major.minor.patch` format. Example: `"1.0.0"`. |
 | `manifestVersion` | number | Yes | Version of the manifest schema. Must be `1`. Set automatically by the Connector Playground. |
 | `connectorVersion` | number | Yes | Version of the connector integration in the host application. Must be `1`. Set automatically by the Connector Playground. |
-| `apps` | array | Yes | Target host applications and supported device classes. Set automatically by the Connector Playground based on your prerelease access. Each entry has a `name` field (must be `"Express"`) and an optional `supportedDeviceClass` array (for example, `["desktop"]`). Verify the generated values in your manifest before connecting. |
+| `apps` | array | Yes | Target host applications and supported device classes. Set automatically by the Connector Playground based on your account permissions. Each entry has a `name` field (must be `"Express"`) and an optional `supportedDeviceClass` array (for example, `["desktop"]`). Verify the generated values in your manifest before connecting. |
 
 ## authConfig
 
@@ -762,7 +762,7 @@ This maps to omitting `authConfig` entirely and setting `useAuth: false` (or omi
 
 ## Related resources
 
-* [Getting Started](../../guides/getting-started.md): A guide to getting started with Adobe Express Connectors.
+* [Getting Started](../../guides/getting-started.md): A guide to getting started with Adobe Express Translate Connectors.
 * [Endpoint Setup:](../../guides/endpoint-setup.md) Full details on each auth type, how Adobe Express delivers credentials, token validation code examples, and pre-Playground testing steps. 
 * [Connector Playground](../../guides/connector-playground.md): Use the Connector Playground to load, validate, and test your connector without a full deployment.
 * `translate-connector-api.yaml`: OpenAPI 3.0 specification defining the complete API contract your service must implement. Download from [Getting Started](../../guides/getting-started.md#developer-resources).

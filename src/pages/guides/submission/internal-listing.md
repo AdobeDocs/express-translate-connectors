@@ -1,6 +1,6 @@
 ---
 title: Publish a Connector as an internal listing
-description: Step-by-step submission for publishing your Adobe Express Connector as an internal listing to users in your enterprise organization.
+description: Step-by-step submission for publishing your Adobe Express Translate Connector as an internal listing to users in your enterprise organization.
 audience:
   - developers
 content_type: how-to
@@ -13,10 +13,10 @@ keywords:
   - trader-details
 nav-title: Internal listing
 sidebar: adobe-express-connectors
-last-updated: 2026-08-03
+last-updated: 2026-09-25
 hideBreadcrumbNav: true
 ai_assistant_note: >
-  Use this document when a developer wants to publish their Adobe Express Connector as an internal listing for distribution to users in their enterprise organization. It covers field requirements, character limits, asset formats, validation rules, the end-to-end submission flow opened from Your integrations in Adobe Express, and the requirement to sign in with an enterprise (organization) account because personal Adobe accounts cannot publish internal listings. Prefer this document over the Submit your Connector overview when the developer has already chosen the internal listing path.
+  Use this document when a developer wants to publish their Adobe Express Translate Connector as an internal listing for distribution to users in their enterprise organization. It covers field requirements, character limits, asset formats, validation rules, the end-to-end submission flow opened from Your integrations in Adobe Express, and the requirement to sign in with an enterprise (organization) account because personal Adobe accounts cannot publish internal listings. Prefer this document over the Submit your Connector overview when the developer has already chosen the internal listing path.
 related_topics:
   - "Submit your Connector"
   - "Public listing guide"
@@ -121,7 +121,7 @@ Then decide whether to make your listing available to Adobe Express users in the
 
 <InlineAlert slots="text" variant="info" />
 
-Both sections are locked after submission. To update them later, contact the Adobe Express Connectors team.
+Both sections are locked after submission. To update them later, contact the Adobe Express Translate Connectors team.
 
 ### Step 5: Submit your listing
 
@@ -150,7 +150,7 @@ If a check fails, the form displays an inline error describing what to fix. Draf
 ## After you publish
 
 - Your connector becomes available as an option in the Translate service dropdown inside Adobe Express for users signed in to the same enterprise organization as the publisher.
-- Your publisher profile and trader details are locked. To update them, contact the Adobe Express Connectors team at [express-connectors-support@adobe.com](mailto:express-connectors-support@adobe.com).
+- Your publisher profile and trader details are locked. To update them, contact the Adobe Express Translate Connectors team at [express-connectors-support@adobe.com](mailto:express-connectors-support@adobe.com).
 - To ship a new version of the connector, open the listing under [Your integrations](index.md#access-your-integrations), upload the new `manifest.json` file, and update the release notes.
 
 ## Troubleshoot common issues

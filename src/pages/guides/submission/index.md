@@ -1,6 +1,6 @@
 ---
 title: Submit your Connector
-description: Choose how to distribute your Adobe Express Connector and look up every submission field for private links, internal listings, and public listings.
+description: Choose how to distribute your Adobe Express Translate Connector and look up every submission field for private links, internal listings, and public listings.
 audience:
   - developers
 content_type: how-to
@@ -11,10 +11,10 @@ keywords:
   - distribution
 nav-title: Overview
 sidebar: adobe-express-connectors
-last-updated: 2026-08-03
+last-updated: 2026-09-25
 hideBreadcrumbNav: true
 ai_assistant_note: >
-  Use this document when a developer asks how to distribute an Adobe Express Connector, how to choose between the three distribution paths (private share link, internal listing, public listing), how to open Your integrations and create a connector integration, or needs a consolidated lookup of every submission form field. It explains who each path is for, the shared steps to access Your integrations, what to prepare, what happens after publishing, and a field-by-field reference with an Applies to column. Send the developer to the matching guide for step-by-step instructions, and to the monetization guidelines page for pricing questions.
+  Use this document when a developer asks how to distribute an Adobe Express Translate Connector, how to choose between the three distribution paths (private share link, internal listing, public listing), how to open Your integrations and create a connector integration, or needs a consolidated lookup of every submission form field. It explains who each path is for, the shared steps to access Your integrations, what to prepare, what happens after publishing, and a field-by-field reference with an Applies to column. Send the developer to the matching guide for step-by-step instructions, and to the monetization guidelines page for pricing questions.
 related_topics:
   - "Private share link guide"
   - "Internal listing guide"
@@ -23,7 +23,7 @@ related_topics:
   - "Connector Playground"
   - "Adobe Express add-on distribution"
 faq:
-  - question: "What are my distribution options for an Adobe Express Connector?"
+  - question: "What are my distribution options for an Adobe Express Translate Connector?"
     answer: "You have three: a private share link for targeted testers or stakeholders, an internal listing for users in your Adobe enterprise organization, and a public listing that makes your connector available after Adobe review."
   - question: "Which distribution option should I choose?"
     answer: "Choose a private share link when you want to share with specific testers without publishing the connector. Choose an internal listing when only your enterprise users need the connector. Choose a public listing when you want Adobe to enable the connector for designated users and enterprises after review."
@@ -34,7 +34,7 @@ faq:
   - question: "Does Adobe review my connector before publishing?"
     answer: "Public connector listings are reviewed by Adobe before they're enabled for users. Internal listings are not reviewed; Adobe validates only the publisher profile and runs automated manifest and endpoint checks. Private share links are not reviewed."
   - question: "Does approval automatically make my public connector available to users?"
-    answer: "No. If you registered a Secure API Key for specific organizations before submitting, Adobe activates visibility for those same organizations once your listing is approved. Otherwise, email the Adobe Express Connectors team at express-connectors-support@adobe.com with your connector ID and the organization IDs or names where the connector should be enabled. See the public listing guide for details."
+    answer: "No. If you registered a Secure API Key for specific organizations before submitting, Adobe activates visibility for those same organizations once your listing is approved. Otherwise, email the Adobe Express Translate Connectors team at express-connectors-support@adobe.com with your connector ID and the organization IDs or names where the connector should be enabled. See the public listing guide for details."
   - question: "Can I switch a private share link into a public listing later?"
     answer: "Yes. After you create a private share link, you can promote it into a public listing from the same connector project without recreating it from scratch."
 ---
@@ -55,17 +55,17 @@ You can publish more than one path for the same connector over time. For example
 
 <InlineAlert slots="heading, text" variant="info" />
 
-Connector early-access enrollment required
+Account access required
 
-Submitting a connector through any of the three paths requires an Adobe account enrolled in the connector early-access program with access to the Adobe Express Connectors prerelease. If **Connector** does not appear as an integration type in the **Create new integration** dialog, your account is not yet enrolled. Contact the Adobe Express Connectors team for access. In early-access builds, the left navigation shows **Your integrations** instead of **Add-ons** so both add-ons and connectors can be managed in one place.
+Enterprise Adobe accounts with a Developer or Administrator role get automatic access to submit a connector as a private link or internal listing. Personal Adobe accounts must first request access using the [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pag3db7joqgtwXSOv/form). Public listings require separate approval for both personal and enterprise users. Submit the [same interest form](https://airtable.com/appiNBn2w6uT0cpkR/pag3db7joqgtwXSOv/form) so the team can review your use case. If **Connector** does not appear as an integration type in the **Create new integration** dialog, your account does not yet have access.
 
 ## Before you submit
 
 Confirm these basics before you start a submission:
 
-1. **Sign in with the right account.** All connector submissions require an Adobe account enrolled in the connector early-access program. Your account type and role determine which paths are available:
-   - **Personal Adobe account:** Can create private share links and public listings. Internal listings are not available.
-   - **Enterprise Adobe account with Administrator or Developer role:** Can create all three submission types.
+1. **Sign in with the right account.** Your account type and role determine which paths are available:
+   - **Personal Adobe account:** Must first request access using the [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pag3db7joqgtwXSOv/form). Once approved, you can create private share links and public listings. Internal listings are not available.
+   - **Enterprise Adobe account with Administrator or Developer role:** Automatic access to private share links and internal listings. Public listings require separate approval. Submit the [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pag3db7joqgtwXSOv/form) for the team to review your use case.
    - **Enterprise Adobe account without Administrator or Developer role:** Blocked from all submission paths before reaching the submission UI. Contact your organization's Adobe administrator to request the role. If you're not sure who that is, see [How do I contact my org administrator?](https://helpx.adobe.com/enterprise/kb/contact-administrator.html)
 2. **Test your connector.** Validate it in [Connector Playground](../connector-playground.md) and check the manifest against the [connector manifest schema](../../reference/manifest-schema/index.md).
 3. **Decide on distribution.** Use the table above to choose between a private share link, an internal listing, or a public listing.
@@ -118,9 +118,9 @@ The first segment of this URL, before the first dot, is your connector's **Conne
 
 What happens next depends on the path you chose:
 
-- **Private share link:** The share link is generated and copied to your clipboard right away. Anyone who has the link can install the connector in Adobe Express, and recipients do not need to be enrolled in the connector early-access program. Later, you can copy the link again, upload a new manifest to ship updates to everyone who has it, promote the connector to a public listing, or delete the link to revoke access.
+- **Private share link:** The share link is generated and copied to your clipboard right away. Anyone who has the link can install the connector in Adobe Express. Later, you can copy the link again, upload a new manifest to ship updates to everyone who has it, promote the connector to a public listing, or delete the link to revoke access.
 - **Internal listing:** The connector publishes to your Adobe enterprise organization without Adobe review. It appears as an option in the Translate service dropdown for users signed in to your organization. Later, you can ship updates by uploading a new manifest under the listing.
-- **Public listing:** Adobe reviews the submission, which typically takes 5 to 10 days, and emails you when the review is complete. Approval does not automatically make the connector available. Adobe enables it only for the organizations you designate, either through Secure API Key registration completed before submission or by contacting Adobe afterward. See [After Adobe approves your listing](public-listing.md#after-adobe-approves-your-listing) for the required steps. Later, you can update the listing or release new versions by reopening it in [Your integrations](#access-your-integrations). Updates go through Adobe review again.
+- **Public listing:** Public listing distribution remains gated for every account, enterprise or personal. If it isn't enabled for your organization yet, the submission flow shows: "Public listing is not currently enabled for your organization. Contact us to request access." Request access using the [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pag3db7joqgtwXSOv/form). Once enabled, Adobe reviews the submission, which typically takes 5 to 10 days, and emails you when the review is complete. Approval does not automatically make the connector available. Adobe enables it only for the organizations you designate, either through Secure API Key registration completed before submission or by contacting Adobe afterward. See [After Adobe approves your listing](public-listing.md#after-adobe-approves-your-listing) for the required steps. Later, you can update the listing or release new versions by reopening it in [Your integrations](#access-your-integrations). Updates go through Adobe review again.
 
 ## Register your Secure API Key with Adobe
 
@@ -180,7 +180,7 @@ Use this section as a lookup while you complete the submission form for your cho
 
 ### Publisher profile
 
-Applies to internal and public listings, first submission only. After submission, the profile is locked. To update it later, contact the Adobe Express Connectors team.
+Applies to internal and public listings, first submission only. After submission, the profile is locked. To update it later, contact the Adobe Express Translate Connectors team.
 
 | Field | Required | Max | Description |
 |---|---|---|---|
@@ -248,18 +248,18 @@ Use this section as a lookup for submission errors across all three paths. The *
 
 | Symptom | Applies to | Cause | Resolution |
 |---|---|---|---|
-| **Connector** doesn't appear as an integration type in the **Create new integration** dialog, or a distribution card is missing from the **Publish** tab | Private, Internal, Public | Account is not enrolled in the connector early-access program. | Contact the Adobe Express Connectors team at [express-connectors-support@adobe.com](mailto:express-connectors-support@adobe.com) for access. |
+| **Connector** doesn't appear as an integration type in the **Create new integration** dialog, or a distribution card is missing from the **Publish** tab | Private, Internal, Public | Personal account not yet approved through the Connector interest form, or enterprise account missing the Developer/Administrator role. | Request access using the [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pag3db7joqgtwXSOv/form), or contact the Adobe Express Translate Connectors team at [express-connectors-support@adobe.com](mailto:express-connectors-support@adobe.com). |
 | **Internal listing** card is not offered (you see only a Create public listing prompt) | Internal | Signed in with a personal Adobe account. Internal listings require an enterprise account. | Sign out and sign back in with your enterprise Adobe account. |
 | **Connector name** shows an inline error | Private, Internal, Public | Name is already taken, is shorter than 3 characters, longer than 25 characters, or contains special characters. | Choose a unique name, 3 to 25 characters, with no special characters. |
 | **Publish** or **Submit for review** button stays disabled | Internal, Public | Required fields are missing or invalid. | Open the **Jump to** dropdown. Incomplete sections aren't marked with a checkmark. |
 | Manifest upload fails with a schema error | Private, Internal, Public | Manifest doesn't conform to the connector manifest schema. | Review the [connector manifest schema](../../reference/manifest-schema/index.md) and re-upload. |
 | Manifest upload fails with a file-type error | Private, Internal, Public | Uploaded a `.zip` instead of a `.json` file. Add-ons upload a `.zip`; connectors upload the manifest `.json` directly. | Re-upload the connector manifest as a single `.json` file. |
 | Endpoint check fails | Internal, Public | Adobe's test payload can't reach your connector's endpoint. | Confirm your service is reachable and the connector URL is on the service-provider allow-list. |
-| Listing isn't visible to users in the EU | Internal, Public | Trader details are set to **No**, or weren't provided. | Contact the Adobe Express Connectors team at [express-connectors-support@adobe.com](mailto:express-connectors-support@adobe.com) to update your publisher profile with Trader details. |
+| Listing isn't visible to users in the EU | Internal, Public | Trader details are set to **No**, or weren't provided. | Contact the Adobe Express Translate Connectors team at [express-connectors-support@adobe.com](mailto:express-connectors-support@adobe.com) to update your publisher profile with Trader details. |
 | Testers report they can't install through a private link | Private | The link was deleted or replaced. | Open the listing's **Private link** tab, delete and recreate the private link, then resend the new URL. |
 | Reviewer can't sign in or gets auth errors testing your connector | Public | Secure API Key wasn't registered with Adobe before submission, or the test account isn't in a registered organization. | Complete [Register your Secure API Key with Adobe](#register-your-secure-api-key-with-adobe) before resubmitting, and confirm the test account belongs to a registered organization. |
 | Review reports a monetization mismatch | Public | Pricing in your listing doesn't match what users see in checkout. | Update either the listing or the checkout to match, then resubmit. |
-| Connector isn't appearing in the Translate dropdown after approval | Public | Enablement is still being processed. | Allow a few business days after approval. If it still hasn't appeared, contact the Adobe Express Connectors team at [express-connectors-support@adobe.com](mailto:express-connectors-support@adobe.com). |
+| Connector isn't appearing in the Translate dropdown after approval | Public | Enablement is still being processed. | Allow a few business days after approval. If it still hasn't appeared, contact the Adobe Express Translate Connectors team at [express-connectors-support@adobe.com](mailto:express-connectors-support@adobe.com). |
 
 ## Related documentation
 

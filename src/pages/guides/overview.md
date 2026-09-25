@@ -1,6 +1,6 @@
 ---
-title: Adobe Express Connectors Overview
-description: Learn what Adobe Express Connectors are, what you can build, and the core concepts behind the manifest-driven integration model.
+title: Adobe Express Translate Connectors Overview
+description: Learn what Adobe Express Translate Connectors are, what you can build, and the core concepts behind the manifest-driven integration model.
 audience:
   - developers
 content_type: concept
@@ -10,11 +10,11 @@ keywords:
 nav-title: Overview
 
 sidebar: adobe-express-connectors
-last-updated: 2026-09-04
+last-updated: 2026-09-25
 hideBreadcrumbNav: true
 ---
 
-# Adobe Express Connectors Overview
+# Adobe Express Translate Connectors Overview
 
 ## What is an Adobe Express Connector?
 
@@ -29,6 +29,12 @@ The first phase of the connectors support focuses on a single connector type: **
 - Configure the connector in Connector Playground
 - Test the connector in the Adobe Express Translate panel
 - Distribute the connector through an [internal listing](submission/internal-listing.md) for users in your enterprise organization, a [public listing](submission/public-listing.md) reviewed by Adobe and enabled for the users and enterprises you designate, or a [private share link](submission/private-link.md) for targeted testers. Start at [Submit your Connector](submission/index.md) to compare options.
+
+<InlineAlert slots="heading, text" variant="info" />
+
+**Only enterprise Adobe Express users can use connectors today**
+
+Only Adobe Express users signed in with an enterprise account can access and use Translate connectors, whether private, internal, or public. Personal-account end users cannot use a connector even if they have the link or the listing is visible to them.
 
 ### Development workflow
 

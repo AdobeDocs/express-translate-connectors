@@ -1,6 +1,6 @@
 ---
-title: Adobe Express Connectors Support
-description: Support resources for Adobe Express Connectors developers, including FAQ and troubleshooting guides.
+title: Adobe Express Translate Connectors Support
+description: Support resources for Adobe Express Translate Connectors developers, including FAQ and troubleshooting guides.
 audience:
   - developers
 content_type:
@@ -11,7 +11,7 @@ keywords:
   - support
 nav-title: Support
 sidebar: adobe-express-connectors
-last-updated: 2026-08-03
+last-updated: 2026-09-25
 hideBreadcrumbNav: true
 ---
 
@@ -25,7 +25,7 @@ Find answers to common questions and resolve errors with the resources below.
 
 [FAQ](faqs/index.md)
 
-Answers to common questions about the connector framework, the prerelease program, and the Connector Playground.
+Answers to common questions about the connector framework and the Connector Playground.
 
 <DiscoverBlock slots="link, text" width="50%"/>
 
@@ -35,7 +35,7 @@ Diagnose and resolve manifest validation errors, API errors, and Connector Playg
 
 ## Contact
 
-If you cannot find an answer in these resources, email the Adobe Express Connectors team directly:
+If you cannot find an answer in these resources, email the Adobe Express Translate Connectors team directly:
 
 **[express-connectors-support@adobe.com](mailto:express-connectors-support@adobe.com)**
 

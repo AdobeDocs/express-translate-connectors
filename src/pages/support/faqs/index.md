@@ -1,6 +1,6 @@
 ---
-title: Adobe Express Connectors FAQ
-description: Answers to frequently asked questions about Adobe Express Connectors, the connector framework, the Connector Playground, and the prerelease program.
+title: Adobe Express Translate Connectors FAQ
+description: Answers to frequently asked questions about Adobe Express Translate Connectors, the connector framework, and the Connector Playground.
 audience:
   - developers
 keywords:
@@ -10,15 +10,15 @@ keywords:
 nav-title: FAQ
 content_type: faq
 sidebar: adobe-express-connectors
-last-updated: 2026-08-03
+last-updated: 2026-09-25
 hideBreadcrumbNav: true
 ---
 
 # Frequently Asked Questions
 
-## What is an Adobe Express Connector?
+## What is an Adobe Express Translate Connector?
 
-An Adobe Express Connector integrates a third-party service into a native Adobe Express feature. You implement a backend API and define the integration in a `manifest.json` file. Adobe Express reads the manifest to generate the UI and call your service. No panel or frontend code is required.
+An Adobe Express Translate Connector integrates a third-party service into a native Adobe Express feature. You implement a backend API and define the integration in a `manifest.json` file. Adobe Express reads the manifest to generate the UI and call your service. No panel or frontend code is required.
 
 ## How are connectors different from Adobe Express Add-ons?
 
@@ -26,7 +26,7 @@ Add-ons run inside a side panel in Adobe Express and require you to build and ma
 
 ## What connector types are available?
 
-The current prerelease supports one connector type: **Translate**. Translate connectors power the Translate feature in Adobe Express. Additional connector types are planned for future releases.
+Adobe Express currently supports one connector type: **Translate**. Translate connectors power the Translate feature in Adobe Express. Additional connector types are planned for future releases.
 
 ## Can I build a connector if I already have an Add-on?
 
@@ -108,11 +108,11 @@ Not in this release. Manifest upload and paste are planned for a future release.
 
 ## What is the Connector Playground?
 
-The Connector Playground is a browser-based tool built into Adobe Express that allows you to load a connector manifest, run the authentication flow, verify API responses, and test the translation experience. It is available to prerelease partners.
+The Connector Playground is a browser-based tool built into Adobe Express that allows you to load a connector manifest, run the authentication flow, verify API responses, and test the translation experience. It is available to enterprise Adobe accounts with a Developer or Administrator role, and to personal accounts approved through the [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pag3db7joqgtwXSOv/form).
 
 ## How do I access the Connector Playground?
 
-Sign in to Adobe Express with your prerelease account. Access the Playground from the developer tools section within Adobe Express. See [Connector Playground](../../guides/connector-playground.md) for step-by-step instructions.
+Sign in to Adobe Express with your enterprise Adobe account, or a personal account approved through the Connector interest form. Access the Playground from the developer tools section within Adobe Express. See [Connector Playground](../../guides/connector-playground.md) for step-by-step instructions.
 
 ## Does the Playground save my work?
 
@@ -122,37 +122,25 @@ Yes. The Playground saves your manifest and connection state within your Adobe a
 
 No. The Connector Playground calls your service endpoints directly. Your service must be running and reachable from your browser or from Adobe Express servers during testing.
 
-## How do I join the prerelease program?
-
-Visit the [Adobe Express Connectors Prerelease](https://www.adobeprerelease.com/beta/93675215-DEBF-47E3-E587-6C88E0C042C2/) page and request access. Adobe reviews applications and grants access to invited partners.
-
-## Is this documentation publicly available?
-
-No. This documentation is private and available only to partners enrolled in the prerelease program.
-
-## When will the connector framework be publicly available?
-
-The public release timeline is not available at this time. Adobe will communicate availability through the prerelease program.
-
 ## How do I submit my connector for distribution?
 
 You have three distribution paths: an [internal listing](../../guides/submission/internal-listing.md) for users in your enterprise organization, a [public listing](../../guides/submission/public-listing.md) reviewed by Adobe and enabled for the users and enterprises you designate, or a [private share link](../../guides/submission/private-link.md) for targeted testers. Open **Your integrations** in Adobe Express, select your connector, then open the **Publish** tab (for internal or public listing) or the **Private link** tab. See [Submit your Connector](../../guides/submission/index.md) to compare the options.
 
 ## Can I publish a connector from a personal Adobe account?
 
-All connector submissions require an Adobe account enrolled in the connector early-access program. Internal listings additionally require an enterprise Adobe account, because internal listings publish to users in an enterprise Adobe organization. Personal Adobe accounts can create private share links and submit public listings, but cannot publish internal listings.
+Personal Adobe accounts must first request access using the [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pag3db7joqgtwXSOv/form). Once approved, personal accounts can create private share links and submit public listings, but cannot publish internal listings, because internal listings require an enterprise Adobe account.
+
+## Can any Adobe Express user use a Translate connector?
+
+No. Only Adobe Express users signed in with an enterprise account can currently use Translate connectors, whether private, internal, or public. Personal-account end users cannot use a connector even if they have the link or the listing is visible to them.
 
 ## Can I monetize my connector?
 
 Yes, when you publish your connector as a [public listing](../../guides/submission/public-listing.md). Internal listings and private share links are not monetized through Adobe Express. See the [connector monetization guidelines](../../guides/submission/monetization-guidelines.md) for supported payment models, payment options, and rules.
 
-## What happens to my connector after the prerelease ends?
-
-Connectors that pass review during the prerelease will be available for production distribution according to the distribution scope you configure (private, internal, or public).
-
 ## How do I contact support?
 
-Email the Adobe Express Connectors team at [express-connectors-support@adobe.com](mailto:express-connectors-support@adobe.com). Include your Connector URL (copied from the Settings tab of your integration) and a description of your question or issue.
+Email the Adobe Express Translate Connectors team at [express-connectors-support@adobe.com](mailto:express-connectors-support@adobe.com). Include your Connector URL (copied from the Settings tab of your integration) and a description of your question or issue.
 
 ## Known Limitations
 
@@ -172,9 +160,9 @@ Do not use `"id": "tone"` for a `formInput` entry in `uiConfig`. This value conf
 
 The manifest is generated through Connector Playground. Direct manifest upload and editing are not supported in this release.
 
-### Connector submissions are in early access
+### Connector submissions require account access
 
-All connector submission paths are part of an early-access release. If **Connector** does not appear as an integration type in the **Create new integration** dialog, your account is not yet enrolled in the connector early-access program. Contact the Adobe Express Connectors team for access. See [Submit your Connector](../../guides/submission/index.md) to compare distribution options.
+Submitting a connector (private link, internal listing, or public listing) requires an Adobe account with access. Enterprise Adobe accounts with a Developer or Administrator role get automatic access to private link and internal listing submission. Personal Adobe accounts must first request access using the [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pag3db7joqgtwXSOv/form). Public listings require separate approval for both personal and enterprise accounts. Submit the same [interest form](https://airtable.com/appiNBn2w6uT0cpkR/pag3db7joqgtwXSOv/form) so the team can review your use case. If **Connector** does not appear as an integration type in the **Create new integration** dialog, your account does not yet have access. See [Submit your Connector](../../guides/submission/index.md) to compare distribution options.
 
 ### Adobe Admin Console administration details are not yet finalized
 

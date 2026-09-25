@@ -11,7 +11,7 @@ keywords:
   - authentication
 nav-title: Endpoint Setup
 sidebar: adobe-express-connectors
-last-updated: 2026-08-03
+last-updated: 2026-09-25
 hideBreadcrumbNav: true
 ---
 

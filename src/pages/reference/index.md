@@ -1,6 +1,6 @@
 ---
-title: Adobe Express Connectors Reference
-description: Reference documentation for Adobe Express Connectors, including the Translate connector API contract and the complete connector manifest schema.
+title: Adobe Express Translate Connectors Reference
+description: Reference documentation for Adobe Express Translate Connectors, including the Translate connector API contract and the complete connector manifest schema.
 audience:
   - developers
 llm-ready: true
@@ -10,13 +10,13 @@ keywords:
   - reference
 nav-title: Reference
 sidebar: adobe-express-connectors
-last-updated: 2026-05-18
+last-updated: 2026-09-25
 hideBreadcrumbNav: true
 ---
 
-# Adobe Express Connectors References
+# Adobe Express Translate Connectors References
 
-This section contains complete reference documentation for Adobe Express Connectors.
+This section contains complete reference documentation for Adobe Express Translate Connectors.
 
 <DiscoverBlock slots="heading, link, text" width="33%"/>
 

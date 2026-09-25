@@ -10,13 +10,13 @@ keywords:
   - connector-playground
 nav-title: Connector Playground
 sidebar: adobe-express-connectors
-last-updated: 2026-07-30
+last-updated: 2026-09-25
 hideBreadcrumbNav: true
 ---
 
 # Connector Playground
 
-Connector Playground is the development environment for Adobe Express Connectors. Use it to configure your connector through a form builder, generate a valid `manifest.json`, and test your service end-to-end from inside Adobe Express without a production deployment.
+Connector Playground is the development environment for Adobe Express Translate Connectors. Use it to configure your connector through a form builder, generate a valid `manifest.json`, and test your service end-to-end from inside Adobe Express without a production deployment.
 
 ## What Connector Playground does
 
@@ -32,9 +32,9 @@ Connector Playground lets you:
 
 ### Enable the Connector Playground toggle
 
-Connector Playground is available to developers approved for the Adobe Express Connectors prerelease program who have a **Developer** or **Administrator** role on their Adobe account.
+Connector Playground is available automatically to enterprise Adobe accounts with a **Developer** or **Administrator** role. Personal Adobe accounts must request access using the [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pag3db7joqgtwXSOv/form) before the Playground becomes available.
 
-Once your account is approved, open the Playground directly:
+Once your account has access, open the Playground directly:
 
 **[Open Connector Playground](https://www.adobe.com/go/connector-playground)**
 
@@ -46,14 +46,14 @@ The first time you launch Connector Playground, a **Developer Terms of Use (DTOU
 
 **Connector Playground not visible?**
 
-The toggle is only visible to accounts approved for the prerelease program. The most common cause of a missing toggle is signing in with a different account than the one used to join the program. If the problem persists, contact [express-connectors-support@adobe.com](mailto:express-connectors-support@adobe.com).
+The toggle is only visible to enterprise Adobe accounts with a Developer or Administrator role, or personal accounts approved through the [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pag3db7joqgtwXSOv/form). If the problem persists, contact [express-connectors-support@adobe.com](mailto:express-connectors-support@adobe.com).
 
 If the direct URL does not open the Playground automatically, you can navigate to it manually:
 
 <Details slots="heading, list" repeat="1" summary="Find the Connector Playground manually" />
 
 - Steps:
-  1. Sign in to [Adobe Express](https://www.adobe.com/express/) with the account approved for the prerelease program.
+  1. Sign in to [Adobe Express](https://www.adobe.com/express/) with your enterprise Adobe account, or the personal account approved through the Connector interest form.
   2. Click the **Add-ons** icon in the left rail to open the Add-ons panel.
   3. Select the **Your add-ons** tab and scroll to the bottom of the panel to find the **Add-on Development** section.
   4. Enable the **Connector Playground** toggle.
@@ -139,7 +139,7 @@ Configure the top-level identity fields for your connector. The form uses human-
 | Form label | Manifest key | Required | Notes |
 | :---- | :---- | :---- | :---- |
 | Connector Name | `name` | Yes | Display name shown in the Adobe Express UI. Letters, numbers, and spaces only (no hyphens or special characters). Must start with a letter or number. 3-31 characters. |
-| Connector Type | `type` | Yes | Dropdown. Always `"Translate"` for the current prerelease. |
+| Connector Type | `type` | Yes | Dropdown. Always `"Translate"`. |
 | Version | `version` | Yes | Semantic version string in `major.minor.patch` format (for example, `1.0.0`). |
 | Connector ID | `id` | Yes | Unique connector identifier. Letters, numbers, and hyphens only. 2-30 characters. Must be globally unique across all connectors. May appear below the visible fields; scroll down if you do not see it. |
 
@@ -231,7 +231,7 @@ The Translate connector type requires `apiConfig` entries with `id` values of `"
 
 **Only `locales` and `tones` can drive panel pickers**
 
-In the current prerelease, only the `locales` and `tones` API endpoints can populate form input pickers in the Translate panel. You can still define endpoints with other ids (for example `categories`), and your service may call them on its own, but their responses are not sent in the `/translate` request and cannot be bound to a picker. Support for additional parameters will be added on a per-partner basis as the allow list expands. If you need this for your integration, contact [express-connectors-support@adobe.com](mailto:express-connectors-support@adobe.com).
+Currently, only the `locales` and `tones` API endpoints can populate form input pickers in the Translate panel. You can still define endpoints with other ids (for example `categories`), and your service may call them on its own, but their responses are not sent in the `/translate` request and cannot be bound to a picker. Support for additional parameters will be added on a per-partner basis as the allow list expands. If you need this for your integration, contact [express-connectors-support@adobe.com](mailto:express-connectors-support@adobe.com).
 
 <InlineAlert slots="text" variant="info" />
 
@@ -407,7 +407,7 @@ Select **More** in the top-right corner to access session and utility options:
 | **Manage session** | View and switch between your saved connector sessions. Only connector sessions are shown when accessed from within Connector Playground. |
 | **Start a new session** | Creates a new connector session with a blank configuration. |
 | **Download code** | Downloads the generated `manifest.json` for your current session. |
-| **View docs** | Opens the Adobe Express Connectors developer documentation. |
+| **View docs** | Opens the Adobe Express Translate Connectors developer documentation. |
 
 ### Sessions
 

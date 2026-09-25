@@ -10,7 +10,7 @@ keywords:
   - testing
 nav-title: Test Your Service
 sidebar: adobe-express-connectors
-last-updated: 2026-07-24
+last-updated: 2026-09-25
 hideBreadcrumbNav: true
 ---
 

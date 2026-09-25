@@ -1,6 +1,6 @@
 ---
-title: Getting Started with Adobe Express Connectors
-description: Download developer resources, verify Connector Playground access, and learn the steps to build your first Adobe Express Connector.
+title: Getting Started with Adobe Express Translate Connectors
+description: Download developer resources, verify Connector Playground access, and learn the steps to build your first Adobe Express Translate Connector.
 audience:
   - developers
 keywords:
@@ -10,11 +10,11 @@ keywords:
 nav-title: Getting Started
 content_type: how-to
 sidebar: adobe-express-connectors
-last-updated: 2026-09-04
+last-updated: 2026-09-25
 hideBreadcrumbNav: true
 ---
 
-# Getting Started with Adobe Express Connectors
+# Getting Started with Adobe Express Translate Connectors
 
 Review prerequisites, download resources, set up the starter project, and verify Playground access before building your connector.
 
@@ -30,13 +30,13 @@ Building and distributing a connector involves three distinct components:
 
 Before you continue, confirm you have the following:
 
-- [**Adobe Express Connectors prerelease access**](https://www.adobeprerelease.com/beta/93675215-DEBF-47E3-E587-6C88E0C042C2/) granted through the [Adobe Prerelease Program](https://www.adobeprerelease.com)
+- **Account access to build and submit connectors.** Enterprise Adobe accounts with a Developer or Administrator role get automatic access to the Connector Playground and connector submission for private link sharing and internal listings. For public listings, submit the [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pag3db7joqgtwXSOv/form) so the team can review your use case. Personal Adobe accounts must also request access using the interest form before the Playground becomes available.
 - **A Developer or Administrator role** assigned to your Adobe account by your organization's Adobe administrator. This role is required to enable Add-on Development mode in Adobe Express, which gives you access to the Connector Playground. If you do not have this role, request it from your admin before continuing. If you are unsure who your administrator is, see [How do I contact my org administrator?](https://helpx.adobe.com/enterprise/kb/contact-administrator.html).
 - **Node.js 18.8.0 or later**, required to run the TypeScript starter project. You can implement your connector in any language, but the starter project requires Node.js.
 
 ## Developer Resources
 
-Three downloadable resources are provided to help you build your connector. All three are also available on the **Downloads** tab of the [Adobe Express Connectors Prerelease](https://www.adobeprerelease.com/beta/93675215-DEBF-47E3-E587-6C88E0C042C2/) program page once you are enrolled.
+Three downloadable resources are provided to help you build your connector.
 
 | Resource | Description |
 |----------|-------------|
@@ -61,7 +61,7 @@ The prerequisites and Playground access steps on this page apply to both paths. 
 
 ## Use the Starter Project
 
-The starter project is the fastest way to get a working connector service running locally before you integrate your own translation logic. Download [`translate-connector-standalone.zip`](translate-connector-standalone.zip) from the table above (or from the **Downloads** tab of the [prerelease program page](https://www.adobeprerelease.com/beta/93675215-DEBF-47E3-E587-6C88E0C042C2/) if you have any issues), then:
+The starter project is the fastest way to get a working connector service running locally before you integrate your own translation logic. Download [`translate-connector-standalone.zip`](translate-connector-standalone.zip) from the table above, then:
 
 1. Unzip and install dependencies:
 
@@ -99,7 +99,7 @@ Adobe Express runs over HTTPS and the Connector Playground calls your service di
 
 The Connector Playground is the tool you will use to configure your connector, generate the manifest, and test end-to-end once your service is running.
 
-Once you are approved for the prerelease program and have a Developer or Administrator role, open the Playground directly:
+If you have a Developer or Administrator role on an enterprise Adobe account, or your personal account has been approved through the [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pag3db7joqgtwXSOv/form), open the Playground directly:
 
 **[Open Connector Playground](https://www.adobe.com/go/connector-playground)**
 
@@ -111,14 +111,14 @@ This URL opens Adobe Express and launches the Connector Playground automatically
 
 **Connector Playground not visible?**
 
-The toggle is only available to developers approved for the prerelease program. The most common reason it is missing is signing in with a different account than the one used to join the prerelease program. If the problem persists after confirming your account, contact [express-connectors-support@adobe.com](mailto:express-connectors-support@adobe.com).
+The toggle is only available to enterprise Adobe accounts with a Developer or Administrator role, or personal accounts approved through the [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pag3db7joqgtwXSOv/form). If you believe your account should have access and the toggle is still missing, contact [express-connectors-support@adobe.com](mailto:express-connectors-support@adobe.com).
 
 If the Go URL does not open the Playground automatically, you can navigate to it manually:
 
 <Details slots="heading, list" repeat="1" summary="Find the Connector Playground manually" />
 
 - Steps:
-  1. Sign in to [Adobe Express](https://www.adobe.com/express/) with the Adobe account that was approved for the prerelease program.
+  1. Sign in to [Adobe Express](https://www.adobe.com/express/) with your enterprise Adobe account, or the personal account approved through the Connector interest form.
   2. Click the **Add-ons** icon in the left rail to open the Add-ons panel.
   3. Select the **Your add-ons** tab and scroll to the bottom of the panel until you see the **Add-on Development** section.
   4. Enable the **Connector Playground** toggle.

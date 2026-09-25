@@ -1,6 +1,6 @@
 ---
-title: Adobe Express Connectors Changelog
-description: Version history and release notes for the Adobe Express Connectors manifest schema and Translate connector API contract.
+title: Adobe Express Translate Connectors Changelog
+description: Version history and release notes for the Adobe Express Translate Connectors manifest schema and Translate connector API contract.
 audience:
   - developers
 doc-type:
@@ -12,11 +12,20 @@ keywords:
   - changelog
 nav-title: Changelog
 sidebar: adobe-express-connectors
-last-updated: 2026-09-08
+last-updated: 2026-09-25
 hideBreadcrumbNav: true
 ---
 
-# Adobe Express Connectors Changelog
+# Adobe Express Translate Connectors Changelog
+
+## 2026-09-25
+
+### Changed
+
+- Adobe Express Translate Connectors documentation is now publicly available. No prerelease program enrollment is required to read it.
+- Enterprise Adobe accounts with a Developer or Administrator role get automatic access to the Connector Playground and connector submission for private link sharing and internal listings.
+- Personal Adobe accounts must request access using the new [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pag3db7joqgtwXSOv/form) before using the Connector Playground or submitting a connector.
+- Public listing distribution remains gated for every account, enterprise or personal, and requires separate approval. Request access using the same [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pag3db7joqgtwXSOv/form).
 
 ## 2026-09-08
 

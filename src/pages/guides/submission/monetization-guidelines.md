@@ -1,6 +1,6 @@
 ---
 title: Connector monetization guidelines
-description: Pricing models, payment options, and rejected patterns for monetized Adobe Express Connectors published as a public listing.
+description: Pricing models, payment options, and rejected patterns for monetized Adobe Express Translate Connectors published as a public listing.
 audience:
   - developers
 content_type: reference
@@ -12,8 +12,7 @@ keywords:
   - pricing
 nav-title: Monetization guidelines
 sidebar: adobe-express-connectors
-last-updated: 2026-07-16
-status: preview
+last-updated: 2026-09-25
 hideBreadcrumbNav: true
 faq:
   - question: "Can I monetize my Adobe Express Connector?"

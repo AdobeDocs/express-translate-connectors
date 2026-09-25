@@ -14,13 +14,13 @@ keywords:
   - distribution
 nav-title: Private share link
 sidebar: adobe-express-connectors
-last-updated: 2026-08-03
+last-updated: 2026-09-25
 hideBreadcrumbNav: true
 faq:
   - question: "What is a private share link for a connector?"
     answer: "A private share link is a unique URL that lets anyone with the link install your connector in Adobe Express. The connector is not published broadly and Adobe does not review private share links."
   - question: "Who can install a connector from a private share link?"
-    answer: "Anyone with the URL. Recipients do not need to be enrolled in the connector early-access program. Treat the link like a credential. If you need access controls, use an internal listing for your enterprise organization instead."
+    answer: "Anyone with the URL who is signed in with an enterprise Adobe account can install the connector. Treat the link like a credential. If you need access controls, use an internal listing for your enterprise organization instead."
   - question: "Can I promote a private share link into a public listing?"
     answer: "Yes. Open the listing's Private link tab and select Create public listing. The public listing form opens with information from the private share link version where applicable."
   - question: "What happens when I delete a private share link?"
@@ -35,9 +35,9 @@ A private share link is a unique URL you can send to anyone to use or test your 
 
 ## Before you begin
 
-- **Account required:** Sign in with a personal Adobe account or an enterprise Adobe account with the Administrator or Developer role in the [Adobe Admin Console](https://adminconsole.adobe.com/). Enterprise accounts without this role are blocked from all submission paths before reaching the submission UI.
+- **Account required:** Sign in with an enterprise Adobe account with the Administrator or Developer role in the [Adobe Admin Console](https://adminconsole.adobe.com/), or a personal Adobe account approved through the [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pag3db7joqgtwXSOv/form). Enterprise accounts without this role are blocked from all submission paths before reaching the submission UI.
 - **Test first:** Configure and validate your connector in the [Connector Playground](../connector-playground.md) before sharing the link.
-- **Treat the link like a credential:** Anyone with the URL can install the connector. Recipients do not need to be enrolled in the connector early-access program. Adobe Express does not require sign-in scoped to your organization for private share link installs.
+- **Treat the link like a credential:** Anyone with the URL can install the connector, provided they're signed in with an enterprise Adobe account. Adobe Express does not require sign-in scoped to your organization for private share link installs.
 - **Getting ready for a public listing?** Create a private share link first when you want to test with specific people yourself, or ship updates outside of a listing review cycle, then later you can come back and create a public listing. See [Get your connector ready for review](public-listing.md#get-your-connector-ready-for-review) for what's needed when you're ready to create a public listing.
 - **Secure API Key registration:** If your connector uses Secure API Key authentication, register your key with Adobe using the organization(s) it should serve and your connector's Connector ID. You can get your Connector ID as soon as you create your integration (no listing required) from the Settings tab described in [Step 4](index.md#step-4-note-your-connector-url). It's required regardless of which listing type you use. See [Register your Secure API Key with Adobe](index.md#register-your-secure-api-key-with-adobe).
 
@@ -144,7 +144,7 @@ Deleting the private share link does not delete the connector project or any ass
 
 ## Troubleshoot common issues
 
-Private-link-specific issues are listed below. For shared issues (early-access enrollment, manifest schema and file-type errors, name conflicts), see the consolidated [Troubleshoot common issues](index.md#troubleshoot-common-issues) table.
+Private-link-specific issues are listed below. For shared issues (account access, manifest schema and file-type errors, name conflicts), see the consolidated [Troubleshoot common issues](index.md#troubleshoot-common-issues) table.
 
 | Symptom | Cause | Resolution |
 |---|---|---|

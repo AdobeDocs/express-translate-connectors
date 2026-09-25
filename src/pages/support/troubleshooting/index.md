@@ -1,6 +1,6 @@
 ---
-title: Troubleshooting Adobe Express Connectors
-description: Diagnose and resolve common Adobe Express Connector errors: manifest validation, API responses, authentication, and Connector Playground issues.
+title: Troubleshooting Adobe Express Translate Connectors
+description: Diagnose and resolve common Adobe Express Translate Connector errors: manifest validation, API responses, authentication, and Connector Playground issues.
 audience:
   - developers
 content_type:
@@ -12,11 +12,11 @@ keywords:
   - errors
 nav-title: Troubleshooting
 sidebar: adobe-express-connectors
-last-updated: 2026-08-03
+last-updated: 2026-09-25
 hideBreadcrumbNav: true
 ---
 
-# Troubleshooting Adobe Express Connectors
+# Troubleshooting Adobe Express Translate Connectors
 
 This page covers common errors and how to resolve them. Errors are grouped by category.
 
@@ -317,9 +317,9 @@ After updating the provider, ask the user to close the popup, then select **Conn
 
 ### Connector Playground is not visible in Adobe Express
 
-**Symptom:** You have prerelease access but cannot find the Connector Playground toggle in Adobe Express.
+**Symptom:** You cannot find the Connector Playground toggle in Adobe Express.
 
-**Resolution:** The Connector Playground toggle is located in the **Add-on Development** section at the bottom of the Add-ons panel. To access it, click the **Add-ons** icon in the left rail, select the **Your add-ons** tab, and scroll to the bottom of the panel. The toggle is only visible after your account is approved for the prerelease program. You must also be signed in with the **same Adobe account email** that was approved. Signing in with a different account is the most common cause of this issue.
+**Resolution:** The Connector Playground toggle is located in the **Add-on Development** section at the bottom of the Add-ons panel. To access it, click the **Add-ons** icon in the left rail, select the **Your add-ons** tab, and scroll to the bottom of the panel. The toggle is only visible to enterprise Adobe accounts with a Developer or Administrator role, or personal accounts approved through the [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pag3db7joqgtwXSOv/form). You must also be signed in with the **same Adobe account email** that has access. Signing in with a different account is the most common cause of this issue.
 
 You can also enable Add-on Development mode manually through Adobe Express Settings:
 
@@ -395,7 +395,7 @@ If you are configuring OAuth 2.0 PKCE, use the same HTTPS hostname for `authoriz
 
 **Symptom:** The manifest and connection state are not restored after a page refresh.
 
-**Resolution:** This behavior may occur if you are signed in to multiple Adobe accounts or if your browser blocks cookies for `adobe.com`. Ensure you are signed in to Adobe Express with the correct prerelease account and that cookies are allowed.
+**Resolution:** This behavior may occur if you are signed in to multiple Adobe accounts or if your browser blocks cookies for `adobe.com`. Ensure you are signed in to Adobe Express with the correct account and that cookies are allowed.
 
 <HorizontalLine />
 
@@ -409,7 +409,7 @@ If you are configuring OAuth 2.0 PKCE, use the same HTTPS hostname for `authoriz
 
 ## Contact Support
 
-If you cannot resolve an issue using this guide, contact the Adobe Express Connectors team at [express-connectors-support@adobe.com](mailto:express-connectors-support@adobe.com). Include:
+If you cannot resolve an issue using this guide, contact the Adobe Express Translate Connectors team at [express-connectors-support@adobe.com](mailto:express-connectors-support@adobe.com). Include:
 
 - Your connector ID
 - A description of the issue

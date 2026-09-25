@@ -1,5 +1,5 @@
 ---
-title: Adobe Express Connectors Guides
+title: Adobe Express Translate Connectors Guides
 description: Build native service integrations for Adobe Express. Connect your translation or content service using a declarative manifest-driven framework.
 audience:
   - developers
@@ -7,7 +7,7 @@ keywords:
   - adobe-express
   - connectors
 nav-title: Guides
-last-updated: 2026-09-04
+last-updated: 2026-09-25
 hideBreadcrumbNav: true
 ---
 
@@ -19,7 +19,7 @@ Build native service integrations for Adobe Express using a declarative, manifes
 
 Adobe Express Translate Connectors integrate third-party services directly into native Adobe Express features. You configure your integration through the Connector Playground, which generates a `manifest.json` that Adobe Express uses to render the UI and route API calls to your service. Connectors do not require a panel or custom UI code.
 
-The current prerelease supports **Translate** connectors, which power the Translate feature in Adobe Express. Additional connector types are planned for future releases.
+Adobe Express currently supports **Translate** connectors, which power the Translate feature in Adobe Express. Additional connector types are planned for future releases.
 
 <DiscoverBlock slots="heading, link, text" width="33%"/>
 
@@ -27,7 +27,7 @@ The current prerelease supports **Translate** connectors, which power the Transl
 
 [Getting Started](getting-started.md)
 
-Download the developer resources, verify Prerelease access, and prepare your environment before building your first connector.
+Download the developer resources and prepare your environment before building your first connector.
 
 <DiscoverBlock slots="link, text" width="33%"/>
 
@@ -79,7 +79,7 @@ Complete HTTP API contract for Translate connectors: all endpoints, request/resp
 
 [FAQ and Known Limitations](../support/faqs/index.md)
 
-Answers to common questions about Adobe Express Connectors and known limitations.
+Answers to common questions about Adobe Express Translate Connectors and known limitations.
 
 <DiscoverBlock slots="heading, link, text" width="50%"/>
 

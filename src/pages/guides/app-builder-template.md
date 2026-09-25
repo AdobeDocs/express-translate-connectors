@@ -12,8 +12,7 @@ keywords:
   - serverless
 nav-title: App Builder Template
 sidebar: adobe-express-connectors
-last-updated: 2026-09-04
-status: preview
+last-updated: 2026-09-25
 hideBreadcrumbNav: true
 ---
 
@@ -365,7 +364,7 @@ These operate at different layers and are configured independently.
 
 The `require-adobe-auth` annotation in `app.config.yaml` is a Runtime gateway setting. It controls whether Adobe I/O Runtime requires a valid Adobe IMS token on the incoming request before passing it to your action code.
 
-The template ships with `require-adobe-auth: false`. Leave it that way for an Express Connectors integration. Adobe Express calls your Runtime action URL the same way it calls any connector endpoint, using the credential type configured in your manifest (OAuth 2.0 PKCE, plain API key, or none). Setting `require-adobe-auth: true` would require the caller to hold a valid Adobe IMS token, which is not part of the Express Connectors auth flow, some other Adobe I/O Runtime integrations set it to `true` when the caller is itself an Adobe product running in an IMS context, but Express Connectors always calls on behalf of an end user through connector-level auth instead.
+The template ships with `require-adobe-auth: false`. Leave it that way for an Express Translate Connectors integration. Adobe Express calls your Runtime action URL the same way it calls any connector endpoint, using the credential type configured in your manifest (OAuth 2.0 PKCE, plain API key, or none). Setting `require-adobe-auth: true` would require the caller to hold a valid Adobe IMS token, which is not part of the Express Connectors auth flow, some other Adobe I/O Runtime integrations set it to `true` when the caller is itself an Adobe product running in an IMS context, but Express Connectors always calls on behalf of an end user through connector-level auth instead.
 
 ### Layer 2: How your action authenticates to your translation service
 
