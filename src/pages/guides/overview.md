@@ -32,9 +32,9 @@ The first phase of the connectors support focuses on a single connector type: **
 
 <InlineAlert slots="heading, text" variant="info" />
 
-**Only enterprise Adobe Express users can use connectors today**
+**Currently supported for enterprise Adobe Express users**
 
-Only Adobe Express users signed in with an enterprise account can access and use Translate connectors, whether private, internal, or public. Personal-account end users cannot use a connector even if they have the link or the listing is visible to them.
+Translate connectors, whether private, internal, or public, are currently supported for Adobe Express users signed in with an enterprise account.
 
 ### Development workflow
 

@@ -132,7 +132,7 @@ Personal Adobe accounts must first request access using the [Connector interest 
 
 ## Can any Adobe Express user use a Translate connector?
 
-No. Only Adobe Express users signed in with an enterprise account can currently use Translate connectors, whether private, internal, or public. Personal-account end users cannot use a connector even if they have the link or the listing is visible to them.
+Translate connectors, whether private, internal, or public, are currently supported for Adobe Express users signed in with an enterprise account.
 
 ## Can I monetize my connector?
 
