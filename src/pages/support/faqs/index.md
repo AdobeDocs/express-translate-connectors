@@ -26,7 +26,7 @@ Add-ons run inside a side panel in Adobe Express and require you to build and ma
 
 ## What connector types are available?
 
-Adobe Express currently supports one connector type: **Translate**. Translate connectors power the Translate feature in Adobe Express. Additional connector types are planned for future releases.
+Adobe Express currently supports one connector type: **Translate**. Translate connectors power the Translate feature in Adobe Express.
 
 ## Can I build a connector if I already have an Add-on?
 
@@ -146,7 +146,7 @@ Email the Adobe Express Translate Connectors team at [express-connectors-support
 
 ### Only the Translate connector type is supported
 
-This release covers Translate connectors only. Support for additional connector types is planned for future releases.
+This release covers Translate connectors only.
 
 ### The locale picker form input must use `"id": "targetLocale"`
 
