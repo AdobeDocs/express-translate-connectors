@@ -1,17 +1,42 @@
 ---
-title: Support - Analytics
-description: This is the support page of Analytics 
+title: Adobe Express Translate Connectors Support
+description: Support resources for Adobe Express Translate Connectors developers, including FAQ and troubleshooting guides.
+audience:
+  - developers
+content_type:
+  - concept
+keywords:
+  - adobe-express
+  - connectors
+  - support
+nav-title: Support
+sidebar: adobe-express-connectors
+last-updated: 2026-09-25
+hideBreadcrumbNav: true
 ---
-
-<Superhero slots="heading, text" background="rgb(19, 93, 183)"/>
 
 # Support
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend ornare purus, vel dapibus augue suscipit in. 
+Find answers to common questions and resolve errors with the resources below.
 
-## Feedback
+<DiscoverBlock slots="heading, link, text" width="50%"/>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend ornare purus, vel dapibus augue suscipit in. Nam blandit vitae ante et auctor. Donec placerat egestas posuere. Aliquam erat volutpat. In condimentum massa eu pharetra porta. Nunc tempus massa sit amet nisl posuere sagittis. Mauris sit amet rhoncus neque. Phasellus ut vulputate est, vel auctor metus.
+## Resources
 
-Donec tincidunt turpis in congue vulputate. Suspendisse potenti. Phasellus feugiat eros sem, tristique sollicitudin lacus consectetur id. Cras tortor orci, venenatis ac vulputate sit amet, auctor sed ex. Ut vel convallis felis. Etiam luctus, diam sed venenatis tincidunt, ipsum turpis volutpat eros, nec interdum arcu mi molestie dolor. Donec id mauris sed odio mollis viverra sed lobortis quam. Aliquam mi metus, ultricies sagittis hendrerit eget, volutpat vel dui. Proin id urna hendrerit, scelerisque arcu sit amet, egestas neque. Sed fringilla odio tincidunt sapien malesuada facilisis.
+[FAQ](faqs/index.md)
 
+Answers to common questions about the connector framework and the Connector Playground.
+
+<DiscoverBlock slots="link, text" width="50%"/>
+
+[Troubleshooting](troubleshooting/index.md)
+
+Diagnose and resolve manifest validation errors, API errors, and Connector Playground issues.
+
+## Contact
+
+If you cannot find an answer in these resources, email the Adobe Express Translate Connectors team directly:
+
+**[express-connectors-support@adobe.com](mailto:express-connectors-support@adobe.com)**
+
+When contacting support, include your Connector ID (from the Settings tab of your integration) and a description of the issue. For technical problems, attach the relevant manifest JSON (with sensitive credentials removed) and any error messages from the Connector Playground or your server logs.
