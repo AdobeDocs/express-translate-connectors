@@ -52,9 +52,9 @@ Three downloadable resources are provided to help you build your connector.
 
 | Resource | Description |
 |----------|-------------|
-| [`translate-connector-api.yaml`](/static/translate-connector-api.yaml) | OpenAPI 3.0 specification defining the complete API contract. Use this to generate server stubs or run automated validation. For a human-readable version with examples, see the [Translate Connector API Reference](../reference/translate-api/index.md). |
-| [`translate-connector-sdk.d.ts`](/static/translate-connector-sdk.d.ts) | TypeScript type definitions for all request and response payloads. Drop this into your project for compile-time safety and editor autocompletion without any registry setup. |
-| [`translate-connector-standalone.zip`](/static/translate-connector-standalone.zip) | Self-contained Node.js starter project that implements all five Translate connector endpoints as stubs. Unzip, run `npm install && npm run serve`, and start building. The SDK type definitions are bundled inside with no registry access required. |
+| [`translate-connector-api.yaml`](translate-connector-api.yaml) | OpenAPI 3.0 specification defining the complete API contract. Use this to generate server stubs or run automated validation. For a human-readable version with examples, see the [Translate Connector API Reference](../reference/translate-api/index.md). |
+| [`translate-connector-sdk.d.ts`](translate-connector-sdk.d.ts) | TypeScript type definitions for all request and response payloads. Drop this into your project for compile-time safety and editor autocompletion without any registry setup. |
+| [`translate-connector-standalone.zip`](translate-connector-standalone.zip) | Self-contained Node.js starter project that implements all five Translate connector endpoints as stubs. Unzip, run `npm install && npm run serve`, and start building. The SDK type definitions are bundled inside with no registry access required. |
 
 <InlineAlert slots="heading,text" />
 
