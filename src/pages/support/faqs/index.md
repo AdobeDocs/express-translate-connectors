@@ -104,7 +104,7 @@ No. Connector Playground generates the manifest through the form builder. The ge
 
 ## Can I upload or paste an existing manifest into the Playground?
 
-Not in this release. Manifest upload and paste are planned for a future release. Use the form builder to configure your connector.
+You can upload an existing `manifest.json` file using **More > Upload manifest**, which opens a file picker and replaces your current session's manifest after you confirm the replacement. Pasting or directly editing the manifest JSON is not supported: the manifest JSON panel is read-only, and all changes go through the form builder. See [Connector Playground: Upload a manifest](../../guides/connector-playground.md#upload-a-manifest) for the full flow.
 
 ## What is the Connector Playground?
 
@@ -156,9 +156,9 @@ The `formInput` entry that displays the locale picker in the Translate panel mus
 
 Do not use `"id": "tone"` for a `formInput` entry in `uiConfig`. This value conflicts with an internal identifier used by Adobe Express and will cause unexpected behavior in the Translate panel. Use `"id": "tones"` instead.
 
-### Connector Playground is the only authoring path
+### The manifest JSON panel is read-only
 
-The manifest is generated through Connector Playground. Direct manifest upload and editing are not supported in this release.
+The manifest is generated through the Connector Playground's form builder. You can upload an existing manifest to load it into a session with **More > Upload manifest**, but pasting or directly editing the JSON in the manifest panel is not supported in this release.
 
 ### Connector submissions require account access
 

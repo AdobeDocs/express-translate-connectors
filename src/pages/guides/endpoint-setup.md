@@ -272,15 +272,15 @@ app.post("/translate", requireApiKey, (req, res) => { /* ... */ });
 
 #### Register your key with Adobe
 
-Configuring `authConfig` and validating the header in your service isn't enough on its own. You must also add your key as a credential from your connector's **Settings** tab so Adobe's secure bridge knows how to route requests for your connector. A connector has a single Secure API Key credential that applies globally. **This applies no matter which listing type you use to distribute your connector:** private share link, internal listing, or public listing.
+Configuring `authConfig` and validating the header in your service isn't enough on its own. You must also add your key as a credential from your connector's **Settings** tab so Adobe's secure bridge knows how to route requests for your connector. A connector has a single Secure API Key credential that applies globally, no matter which listing type you use to distribute it: private share link, internal listing, or public listing.
 
-<InlineAlert slots="heading, text" variant="warning" />
+<InlineAlert slots="heading, text1, text2" variant="warning" />
 
-**Add your credential before you submit a public listing**
+**Your connector won't work until your key is registered**
 
-If you're preparing a public listing, add your Secure API Key credential before you click **Submit for review**, so the review team can test your connector.
+Adobe's secure bridge only forwards requests for connectors with a registered credential. Until you add yours, a private share link or internal listing fails authentication for anyone who uses it, and a public listing stalls in review because the review team can't test your connector.
 
-See [Register your Secure API Key with Adobe](submission/index.md#register-your-secure-api-key-with-adobe) in the Submit your Connector guide for the full steps, including how to add your credential from the Settings tab.
+See [Register your Secure API Key with Adobe](submission/index.md#register-your-secure-api-key-with-adobe) in the Submit your Connector guide for the full steps.
 
 #### Test locally
 
