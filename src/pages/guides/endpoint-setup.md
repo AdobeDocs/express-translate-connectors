@@ -11,7 +11,7 @@ keywords:
   - authentication
 nav-title: Endpoint Setup
 sidebar: adobe-express-connectors
-last-updated: 2026-09-25
+last-updated: 2026-09-28
 hideBreadcrumbNav: true
 ---
 
@@ -272,19 +272,19 @@ app.post("/translate", requireApiKey, (req, res) => { /* ... */ });
 
 #### Register your key with Adobe
 
-Configuring `authConfig` and validating the header in your service isn't enough on its own. You must also register your key with Adobe so its secure bridge knows how to route requests for your connector. Registration is per Adobe organization: your connector can only be used from organizations where a key is registered. **This applies no matter which listing type you use to distribute your connector:** private share link, internal listing, or public listing.
+Configuring `authConfig` and validating the header in your service isn't enough on its own. You must also add your key as a credential from your connector's **Settings** tab so Adobe's secure bridge knows how to route requests for your connector. A connector has a single Secure API Key credential that applies globally. **This applies no matter which listing type you use to distribute your connector:** private share link, internal listing, or public listing.
 
 <InlineAlert slots="heading, text" variant="warning" />
 
-**Register before you submit a public listing**
+**Add your credential before you submit a public listing**
 
-If you're preparing a public listing, complete key registration before you click **Submit for review**. The review team tests your connector from the Adobe organization you provide in **Notes to reviewer**, and that organization can only use your connector if your Secure API Key is already registered for it.
+If you're preparing a public listing, add your Secure API Key credential before you click **Submit for review**, so the review team can test your connector.
 
-Registration needs two things: the Adobe organization(s) your key should serve, and your connector's **Connector ID**, the subdomain segment of your Connector URL, shown in the Settings tab of your integration in Your integrations. You don't need a listing or submission to get a Connector ID; Adobe Express generates it as soon as you create the integration, and it's different from the `id` field in your connector manifest. See [Register your Secure API Key with Adobe](submission/index.md#register-your-secure-api-key-with-adobe) in the Submit your Connector guide for the full registration steps, including how to find your Connector ID and an organization ID.
+See [Register your Secure API Key with Adobe](submission/index.md#register-your-secure-api-key-with-adobe) in the Submit your Connector guide for the full steps, including how to add your credential from the Settings tab.
 
 #### Test locally
 
-Test your endpoint validation before registering your key with Adobe by sending the header directly:
+Test your endpoint validation before adding your key as a credential by sending the header directly:
 
 ```shell
 # Should return 401 - missing key header
@@ -305,7 +305,7 @@ curl -X POST http://localhost:8787/translate \
   -d '{"sourceLocale":"en-US","targetLocale":"fr-FR","items":["Hello"]}'
 ```
 
-End-to-end validation, where Adobe's bridge injects the key automatically, requires the Connector Playground after Adobe has registered your key.
+End-to-end validation, where Adobe's bridge injects the key automatically, requires the Connector Playground after you've added your credential.
 
 #### Migrate from plain API Key
 
@@ -315,7 +315,7 @@ To migrate an existing plain API Key connector to Secure API Key:
 2. Remove the `apiKey` field from `authConfig`.
 3. Add a `headers` object to each `apiConfig` endpoint where `useAuth: true`, using `"$secureApiKey"` as the value for your chosen header name (for example, `"headers": { "x-api-key": "$secureApiKey" }`).
 4. Update your backend to validate the key from the header you chose (for example, `req.headers["x-api-key"]`).
-5. Follow the steps in [Register your Secure API Key with Adobe](submission/index.md#register-your-secure-api-key-with-adobe) to submit your manifest and share your key with Adobe securely.
+5. Follow the steps in [Register your Secure API Key with Adobe](submission/index.md#register-your-secure-api-key-with-adobe) to add your key as a credential from your connector's Settings tab.
 
 Your backend validation logic only needs to change if the header name differs between your `$apiKey` and `$secureApiKey` configurations.
 

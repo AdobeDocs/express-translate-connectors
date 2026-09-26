@@ -10,7 +10,7 @@ keywords:
 nav-title: Overview
 
 sidebar: adobe-express-connectors
-last-updated: 2026-09-25
+last-updated: 2026-09-28
 hideBreadcrumbNav: true
 ---
 

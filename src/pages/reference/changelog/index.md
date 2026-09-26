@@ -12,13 +12,17 @@ keywords:
   - changelog
 nav-title: Changelog
 sidebar: adobe-express-connectors
-last-updated: 2026-09-25
+last-updated: 2026-09-28
 hideBreadcrumbNav: true
 ---
 
 # Adobe Express Translate Connectors Changelog
 
-## 2026-09-25
+## 2026-09-28
+
+### Added
+
+- Self-service Secure API Key credential management. Add, update, or delete your connector's Secure API Key from the **Connector credentials** section of the **Settings** tab in Your integrations. Takes effect immediately, no email or confirmation from Adobe required. A connector has a single Secure API Key credential that applies globally, replacing the previous per-organization registration process. See [Register your Secure API Key with Adobe](../../guides/submission/index.md#register-your-secure-api-key-with-adobe).
 
 ### Changed
 

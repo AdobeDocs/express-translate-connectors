@@ -10,7 +10,7 @@ keywords:
 nav-title: FAQ
 content_type: faq
 sidebar: adobe-express-connectors
-last-updated: 2026-09-25
+last-updated: 2026-09-28
 hideBreadcrumbNav: true
 ---
 
@@ -60,7 +60,7 @@ No. Plain API Key (`"type": "API_KEY"`) is supported in the Connector Playground
 
 Your manifest declares `"type": "SECURE_API_KEY"` in `authConfig` and uses the `$secureApiKey` placeholder in `apiConfig.headers` for the header your service validates. When a translation request is triggered, Adobe Express routes it through Adobe's secure bridge. The bridge resolves the registered key for the user's Adobe org, injects it into the header you specified, and forwards the request to your service. The key never appears in the manifest and never reaches client devices.
 
-Currently, registration is handled by the Adobe team, and you don't need to submit a listing first. Create a connector integration in **Your integrations**, then open its **Settings** tab and click **Copy** to copy your Connector URL. Email [express-connectors-support@adobe.com](mailto:express-connectors-support@adobe.com) with that URL pasted as-is. Adobe derives your Connector ID from it, so you don't need to extract it yourself. (This ID is a different value from the `id` field in your connector manifest.) Include the Adobe org ID(s) the connector should be visible to in the same email. Separately, share the secure API key(s) mapped to those org IDs using a secure-sharing tool of your choice. Never paste key values into the email itself: raw keys should never be exposed over email. A self-managed UI for registering and rotating your own keys is planned for a future release.
+You add your key yourself, and you don't need to submit a listing first. Create a connector integration in **Your integrations**, open its **Settings** tab, and find the **Connector credentials** section. Click **Add credential**, select **API key**, click **Next**, then enter your key or secret and click **Save**. The value is encrypted and never exposed in your application code; you can't view it again after saving, but you can replace or delete it from the same section later. There's no email or wait for Adobe confirmation: the credential takes effect as soon as you save it.
 
 See [Endpoint Setup: Secure API Key](../../guides/endpoint-setup.md#option-3-secure-api-key) for the manifest configuration, backend validation sample, registration steps, and migration path from plain API Key.
 

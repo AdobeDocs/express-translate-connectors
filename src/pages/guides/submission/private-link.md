@@ -14,7 +14,7 @@ keywords:
   - distribution
 nav-title: Private share link
 sidebar: adobe-express-connectors
-last-updated: 2026-09-25
+last-updated: 2026-09-28
 hideBreadcrumbNav: true
 faq:
   - question: "What is a private share link for a connector?"
@@ -39,13 +39,13 @@ A private share link is a unique URL you can send to anyone to use or test your 
 - **Test first:** Configure and validate your connector in the [Connector Playground](../connector-playground.md) before sharing the link.
 - **Treat the link like a credential:** Anyone with the URL can install the connector, provided they're signed in with an enterprise Adobe account. Adobe Express does not require sign-in scoped to your organization for private share link installs.
 - **Getting ready for a public listing?** Create a private share link first when you want to test with specific people yourself, or ship updates outside of a listing review cycle, then later you can come back and create a public listing. See [Get your connector ready for review](public-listing.md#get-your-connector-ready-for-review) for what's needed when you're ready to create a public listing.
-- **Secure API Key registration:** If your connector uses Secure API Key authentication, register your key with Adobe using the organization(s) it should serve and your connector's Connector ID. You can get your Connector ID as soon as you create your integration (no listing required) from the Settings tab described in [Step 4](index.md#step-4-note-your-connector-url). It's required regardless of which listing type you use. See [Register your Secure API Key with Adobe](index.md#register-your-secure-api-key-with-adobe).
+- **Secure API Key credential:** If your connector uses Secure API Key authentication, add your key as a credential from your connector's **Settings** tab. It's required regardless of which listing type you use. See [Register your Secure API Key with Adobe](index.md#register-your-secure-api-key-with-adobe).
 
 <InlineAlert slots="heading, text" variant="warning" />
 
 **This link won't work until registration completes**
 
-If your connector uses Secure API Key authentication, anyone who opens this private link will hit an authentication error until Adobe confirms your key registration for their organization.
+If your connector uses Secure API Key authentication, anyone who opens this private link will hit an authentication error until you've added your Secure API Key credential.
 
 ## Submission steps
 
