@@ -1,0 +1,382 @@
+openapi: 3.0.3
+info:
+    title: Adobe Express Translate Connector API
+    description: |-
+        API specification for Adobe Express Translate Connectors.
+
+        Translate connectors enable third-party translation services to integrate
+        with Adobe Express. A connector must implement the endpoints defined below
+        so that the Express translation workflow can discover supported locales,
+        tones, perform translations, collect feedback, and verify service health.
+    version: "1"
+    contact:
+        name: Adobe Creative Cloud Web
+servers:
+    - url: "{connectorBaseUrl}"
+      description: Connector-provided base URL
+      variables:
+          connectorBaseUrl:
+              default: "http://localhost:8787"
+              description: "Base URL of your connector service (e.g. http://localhost:8787 or https://my-connector.example.com)"
+tags:
+    - name: Translation
+      description: Translation operation
+    - name: Discovery
+      description: Locale and tone discovery
+    - name: Feedback
+      description: User feedback on translation
+    - name: Health
+      description: Service health check
+paths:
+    /health:
+        get:
+            operationId: getHealth
+            summary: Health check
+            description: Returns the current availability status of the translation service.
+            tags:
+                - Health
+            x-codeSamples:
+                - lang: curl
+                  source: |
+                      curl http://localhost:8787/health
+                - lang: JavaScript
+                  source: |
+                      const response = await fetch('http://localhost:8787/health');
+                      const data = await response.json();
+                      console.log(data);
+            responses:
+                "200":
+                    description: Health check response.
+                    content:
+                        application/json:
+                            schema:
+                                $ref: "#/components/schemas/HealthResponse"
+    /locales:
+        get:
+            operationId: getLocales
+            summary: Get supported locales
+            description: Returns the list of locales supported by the translation service.
+            tags:
+                - Discovery
+            x-codeSamples:
+                - lang: curl
+                  source: |
+                      curl http://localhost:8787/locales
+                - lang: JavaScript
+                  source: |
+                      const response = await fetch('http://localhost:8787/locales');
+                      const data = await response.json();
+                      console.log(data);
+            responses:
+                "200":
+                    description: Get supported locales response.
+                    content:
+                        application/json:
+                            schema:
+                                $ref: "#/components/schemas/LocalesResponse"
+    /tones:
+        get:
+            operationId: getTones
+            summary: Get supported tones
+            description: Returns the list of translation tones (e.g., formal, casual) supported by the service.
+            tags:
+                - Discovery
+            x-codeSamples:
+                - lang: curl
+                  source: |
+                      curl http://localhost:8787/tones
+                - lang: JavaScript
+                  source: |
+                      const response = await fetch('http://localhost:8787/tones');
+                      const data = await response.json();
+                      console.log(data);
+            responses:
+                "200":
+                    description: Get supported tones response.
+                    content:
+                        application/json:
+                            schema:
+                                $ref: "#/components/schemas/TonesResponse"
+    /translate:
+        post:
+            operationId: translate
+            summary: Translate content
+            description: Translates an array of text items from a source locale to a target locale, optionally applying a tone.
+            tags:
+                - Translation
+            x-codeSamples:
+                - lang: curl
+                  source: |
+                      curl -X POST http://localhost:8787/translate \
+                        -H "Content-Type: application/json" \
+                        -d '{
+                          "sourceLocale": "en-US",
+                          "targetLocale": "fr-FR",
+                          "items": ["Hello, world!"]
+                        }'
+                - lang: JavaScript
+                  source: |
+                      const response = await fetch('http://localhost:8787/translate', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                          sourceLocale: 'en-US',
+                          targetLocale: 'fr-FR',
+                          items: ['Hello, world!']
+                        })
+                      });
+                      const data = await response.json();
+                      console.log(data);
+            responses:
+                "200":
+                    description: Translate content response.
+                    content:
+                        application/json:
+                            schema:
+                                $ref: "#/components/schemas/TranslationResponse"
+            requestBody:
+                required: true
+                content:
+                    application/json:
+                        schema:
+                            $ref: "#/components/schemas/TranslationRequest"
+    /feedback:
+        post:
+            operationId: submitFeedback
+            summary: Submit feedback
+            description: Submits user feedback (positive or negative) for a translation.
+            tags:
+                - Feedback
+            x-codeSamples:
+                - lang: curl
+                  source: |
+                      curl -X POST http://localhost:8787/feedback \
+                        -H "Content-Type: application/json" \
+                        -d '{
+                          "type": "Positive",
+                          "reason": "AccurateTranslation"
+                        }'
+                - lang: JavaScript
+                  source: |
+                      const response = await fetch('http://localhost:8787/feedback', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                          type: 'Positive',
+                          reason: 'AccurateTranslation'
+                        })
+                      });
+                      const data = await response.json();
+                      console.log(data);
+            responses:
+                "200":
+                    description: Submit feedback response.
+                    content:
+                        application/json:
+                            schema:
+                                $ref: "#/components/schemas/FeedbackResponse"
+            requestBody:
+                required: true
+                content:
+                    application/json:
+                        schema:
+                            $ref: "#/components/schemas/FeedbackRequest"
+components:
+    schemas:
+        ErrorCode:
+            type: string
+            enum:
+                - BadRequest
+                - Unauthorized
+                - GenericError
+            description: Error codes for the translation service.
+        FeedbackNegativeReason:
+            type: string
+            enum:
+                - HarmfulOrBiasContent
+                - CopyrightTrademarkViolation
+                - NudityOrSexualContent
+                - ViolenceOrGore
+                - TranslationError
+                - IncorrectTone
+                - IncorrectLayout
+                - LongLoadTime
+                - Other
+            description: Reasons for negative feedback.
+        FeedbackPositiveReason:
+            type: string
+            enum:
+                - AccurateTranslation
+                - CorrectTone
+                - PreservedLayout
+                - QuickLoad
+                - Impressive
+                - Other
+            description: Reasons for positive feedback.
+        FeedbackReason:
+            anyOf:
+                - $ref: "#/components/schemas/FeedbackPositiveReason"
+                - $ref: "#/components/schemas/FeedbackNegativeReason"
+            description: The reason for the feedback.
+        FeedbackRequest:
+            type: object
+            properties:
+                type:
+                    $ref: "#/components/schemas/FeedbackType"
+                    description: The feedback type.
+                reason:
+                    $ref: "#/components/schemas/FeedbackReason"
+                    description: The reason for the feedback.
+                note:
+                    type: string
+                    description: Additional note about the feedback, if any.
+            required:
+                - type
+                - reason
+            description: Request structure for submitting feedback.
+        FeedbackType:
+            type: string
+            enum:
+                - Positive
+                - Negative
+            description: The type of feedback.
+        FeedbackResponse:
+            type: object
+            properties:
+                errorCode:
+                    $ref: "#/components/schemas/ErrorCode"
+                    description: (Optional) The error code of the response.
+                errorMessage:
+                    type: string
+                    description: (Optional) The error message of the response.
+            description: Response structure for submitting feedback.
+        HealthResponse:
+            type: object
+            properties:
+                message:
+                    type: string
+                    description: (Optional) Message providing additional details about the health status.
+                errorCode:
+                    $ref: "#/components/schemas/ErrorCode"
+                    description: (Optional) The error code of the response.
+                errorMessage:
+                    type: string
+                    description: (Optional) The error message of the response.
+            description: The response schema for the health API.
+        Locale:
+            type: object
+            properties:
+                code:
+                    type: string
+                    description: The IETF language tag for the locale (e.g. "en-US", "fr-FR").
+                label:
+                    type: string
+                    description: The human-readable label for the locale.
+                category:
+                    type: string
+                    description: Locale category (e.g. "Popular languages", "Other languages").
+            required:
+                - code
+                - label
+            description: Represents a locale supported by the translation service.
+        LocalesResponse:
+            type: object
+            properties:
+                locales:
+                    type: array
+                    items:
+                        $ref: "#/components/schemas/Locale"
+                    description: The list of supported locales.
+                errorCode:
+                    $ref: "#/components/schemas/ErrorCode"
+                    description: (Optional) The error code of the response.
+                errorMessage:
+                    type: string
+                    description: (Optional) The error message of the response.
+            required:
+                - locales
+            description: Response structure for fetching supported locales.
+        Tone:
+            type: object
+            properties:
+                value:
+                    type: string
+                    description: The value of the tone (e.g. "Formal", "Informal").
+                label:
+                    type: string
+                    description: Label for the tone.
+            required:
+                - value
+                - label
+            description: Represents a tone supported by the translation service.
+        TonesResponse:
+            type: object
+            properties:
+                tones:
+                    type: array
+                    items:
+                        $ref: "#/components/schemas/Tone"
+                    description: The list of supported tones.
+                errorCode:
+                    $ref: "#/components/schemas/ErrorCode"
+                    description: (Optional) The error code of the response.
+                errorMessage:
+                    type: string
+                    description: (Optional) The error message of the response.
+            required:
+                - tones
+            description: Response structure for fetching supported tones.
+        TranslateErrorCode:
+            anyOf:
+                - $ref: "#/components/schemas/TranslateResponseErrorCode"
+                - $ref: "#/components/schemas/ErrorCode"
+            description: Error codes for the translation response.
+        TranslateResponseErrorCode:
+            type: string
+            enum:
+                - UnsupportedLocale
+                - SourceTargetLocaleSame
+                - UnsafeSourceContentDetected
+                - InputTokenLimitExceeded
+                - ServiceCapacity
+                - MaxSizeExceeded
+            description: Error codes for the translation response. These map to specific UI behaviors in Adobe Express.
+        TranslationRequest:
+            type: object
+            properties:
+                sourceLocale:
+                    type: string
+                    description: The source locale code.
+                targetLocale:
+                    type: string
+                    description: The target locale code to translate into.
+                items:
+                    type: array
+                    items:
+                        type: string
+                    description: List of items containing messages to translate.
+                tone:
+                    type: string
+                    description: The tone of the translation.
+            required:
+                - sourceLocale
+                - targetLocale
+                - items
+            description: Payload for a translation request.
+        TranslationResponse:
+            type: object
+            properties:
+                result:
+                    type: array
+                    items:
+                        type: string
+                    description: List of translation result, keyed by locale code.
+                errorCode:
+                    $ref: "#/components/schemas/TranslateErrorCode"
+                    description: "* (Optional) The error code of the response."
+                errorMessage:
+                    type: string
+                    description: (Optional) The error message of the response.
+            required:
+                - result
+            description: Response from the translation service.

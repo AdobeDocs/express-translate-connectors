@@ -1,24 +1,98 @@
 ---
-title: Guides - Analytics
-description: This is the guides overview page of  Analytics 
+title: Adobe Express Translate Connectors Guides
+description: Build native service integrations for Adobe Express. Connect your translation or content service using a declarative manifest-driven framework.
+audience:
+  - developers
+keywords:
+  - adobe-express
+  - connectors
+nav-title: Guides
+last-updated: 2026-09-28
+hideBreadcrumbNav: true
 ---
 
-# Get Started
+<Superhero slots="heading, text" background="linear-gradient(180deg, #c946eb, #6372f5)" variant="default" textColor="white"/>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada feugiat enim vel facilisis. Nunc eget enim eu lacus lobortis tincidunt a nec est. Nunc quis sapien quis orci rutrum sollicitudin. Nullam vehicula ultricies mauris, id aliquam justo aliquam vitae. Nam quis tincidunt ante. Curabitur sagittis aliquam elit, at auctor enim maximus et. Praesent in lectus facilisis, tempor magna eget, bibendum est. In quis ornare mi. Donec vestibulum viverra magna, non mollis leo vestibulum sit amet. Aenean euismod nulla augue, sit amet vehicula nibh faucibus vel. Fusce at est lacus. Nullam ante nulla, elementum nec ornare in, placerat luctus enim. Suspendisse vitae lacinia nibh. Pellentesque porta accumsan est at volutpat. Nulla aliquam dictum faucibus.
+# Adobe Express Translate Connectors
 
-## Authentication
+Build native service integrations for Adobe Express using a declarative, manifest-driven connector framework. Connect your translation service directly into Adobe Express workflows without building a panel or UI from scratch.
 
-Mauris pellentesque ornare nulla. Proin fermentum elementum velit non consequat. Donec euismod nisl sed tellus sagittis, a consequat leo rhoncus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse neque justo, porttitor eget volutpat sed, suscipit nec mauris. Etiam nec egestas purus. Praesent suscipit in elit cursus consectetur. Duis blandit pulvinar odio, eget volutpat magna vestibulum interdum. Ut sed ultrices risus, vel gravida nisi. Sed vitae rutrum felis. Aliquam at eros molestie, sagittis augue sed, venenatis erat. Praesent at consectetur tellus, ut vehicula nunc. Pellentesque aliquet condimentum neque, fermentum consequat neque viverra vel. Aliquam accumsan dignissim turpis vitae consequat. Aenean id justo vel diam sollicitudin posuere. Sed eu mauris ac elit porta commodo et varius sem.
+Adobe Express Translate Connectors integrate third-party services directly into native Adobe Express features. You configure your integration through the Connector Playground, which generates a `manifest.json` that Adobe Express uses to render the UI and route API calls to your service. Connectors do not require a panel or custom UI code.
 
-## OAuth
+Adobe Express currently supports **Translate** connectors, which power the Translate feature in Adobe Express.
 
-Donec imperdiet tempus ligula, sit amet pellentesque justo pharetra quis. Duis sed lacus diam. Maecenas sollicitudin diam sit amet pharetra placerat. Aliquam egestas lectus et tellus sagittis, venenatis finibus nisi volutpat. Cras laoreet, nisl sed faucibus laoreet, nibh arcu pretium enim, eget elementum ligula tellus vitae lorem. Aenean consequat in lorem at venenatis. Phasellus consequat dolor in libero vulputate rutrum. Nulla sit amet augue fringilla, elementum libero eget, accumsan velit. Suspendisse et lorem ornare, congue justo vel, ultrices felis. Ut et aliquet eros. Nulla facilisi. Nulla vitae velit a enim egestas eleifend. Etiam malesuada orci non mollis vulputate. Praesent id augue eget sapien lobortis bibendum. Praesent placerat tellus dui, vel facilisis magna condimentum in.
+<DiscoverBlock slots="heading, link, text" width="33%"/>
 
-<InlineAlert variant="info" slots="text"/>
+## Start Here
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna tellus, fringilla sit amet lorem eget, dignissim pellentesque ligula. Donec nec dolor vitae leo laoreet aliquam vehicula at dui. Integer in tortor lacus. Aliquam convallis, lorem ac consectetur sodales, tellus.
+[Getting Started](getting-started.md)
 
-## JWT
+Download the developer resources and prepare your environment before building your first connector.
 
-Donec imperdiet tempus ligula, sit amet pellentesque justo pharetra quis. Duis sed lacus diam. Maecenas sollicitudin diam sit amet pharetra placerat. Aliquam egestas lectus et tellus sagittis, venenatis finibus nisi volutpat. Cras laoreet, nisl sed faucibus laoreet, nibh arcu pretium enim, eget elementum ligula tellus vitae lorem. Aenean consequat in lorem at venenatis. Phasellus consequat dolor in libero vulputate rutrum. Nulla sit amet augue fringilla, elementum libero eget, accumsan velit. Suspendisse et lorem ornare, congue justo vel, ultrices felis. Ut et aliquet eros. Nulla facilisi. Nulla vitae velit a enim egestas eleifend. Etiam malesuada orci non mollis vulputate. Praesent id augue eget sapien lobortis bibendum. Praesent placerat tellus dui, vel facilisis magna condimentum in.
+<DiscoverBlock slots="link, text" width="33%"/>
+
+[Overview](overview.md)
+
+Learn how translate connectors work, what you can build, and the core concepts behind the manifest-driven model.
+
+<DiscoverBlock slots="link, text" width="33%"/>
+
+[Endpoint Setup](endpoint-setup.md)
+
+Choose an authentication method, implement the five Translate API endpoints, and test your service locally with the provided spec and sample code.
+
+<DiscoverBlock slots="link, text" width="33%"/>
+
+[App Builder Template](app-builder-template.md)
+
+Skip hosting your own service. Deploy your Translate connector as Adobe I/O Runtime actions using the App Builder starter template.
+
+<DiscoverBlock slots="heading, link, text" width="33%"/>
+
+## Configure & Test
+
+[Connector Playground](connector-playground.md)
+
+Use the Connector Playground to configure your connector, generate the manifest, validate your setup, and connect your service.
+
+<DiscoverBlock slots="link, text" width="33%"/>
+
+[Test Your Service](test-your-service.md)
+
+Verify each endpoint with `curl`, then validate the end-to-end integration in the Connector Playground and the Translate panel.
+
+<DiscoverBlock slots="link, text" width="33%"/>
+
+[Manifest Schema Reference](../reference/manifest-schema/index.md)
+
+Understand every section of the `manifest.json` file: identity, app targets, API configuration, auth, and UI configuration.
+
+<DiscoverBlock slots="heading, link, text" width="50%"/>
+
+## References
+
+[Translate API Reference](../reference/translate-api/index.md)
+
+Complete HTTP API contract for Translate connectors: all endpoints, request/response schemas, and error codes.
+
+<DiscoverBlock slots="link, text" width="50%"/>
+
+[FAQ and Known Limitations](../support/faqs/index.md)
+
+Answers to common questions about Adobe Express Translate Connectors and known limitations.
+
+<DiscoverBlock slots="heading, link, text" width="50%"/>
+
+## Support
+
+[Troubleshooting](../support/troubleshooting/index.md)
+
+Diagnose and resolve common errors in the Connector Playground, manifest validation, authentication, and the Translate panel.
+
+<DiscoverBlock slots="heading, link, text" width="50%"/>
+
+## Distribute
+
+[Submit your Connector](submission/index.md)
+
+Distribute your connector through an internal listing, a public listing, or a private share link. Compare options and start the submission process.
