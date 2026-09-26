@@ -47,7 +47,7 @@ When your connector is tested and ready, you have three ways to distribute it th
 
 | Option | Use it when | Visibility |
 |---|---|---|
-| [Private share link](private-link.md) | You need to share with specific testers or stakeholders before, or instead of, publishing the connector. | Anyone who has the link. |
+| [Private share link](private-link.md) | You need to share with specific testers or stakeholders before, or instead of, publishing the connector. | Anyone with the link, subject to the connector's authentication requirements and the enterprise account requirement below. |
 | [Internal listing](internal-listing.md) | You build for your own enterprise users and want centralized discovery without publishing the connector. | Users in your enterprise organization, via the Translate service dropdown. |
 | [Public listing](public-listing.md) | You want broad distribution after Adobe review. | Adobe Express users in enterprises where the connector is enabled after review, via the Translate service dropdown. |
 
@@ -55,9 +55,15 @@ You can publish more than one path for the same connector over time. For example
 
 <InlineAlert slots="heading, text" variant="info" />
 
+End-user access is enterprise-only
+
+Regardless of distribution path, Translate connectors are currently supported only for Adobe Express users signed in with an enterprise account. A private share link, internal listing, or public listing controls how users find or gain access to a connector; it does not change this requirement. Personal account users can't use a connector even with a valid private link.
+
+<InlineAlert slots="heading, text" variant="info" />
+
 Account access required
 
-Enterprise Adobe accounts with a Developer or Administrator role get automatic access to submit a connector as a private link or internal listing. Personal Adobe accounts must first request access using the [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pag3db7joqgtwXSOv/form). Public listings require separate approval for both personal and enterprise users. Submit the [same interest form](https://airtable.com/appiNBn2w6uT0cpkR/pag3db7joqgtwXSOv/form) so the team can review your use case. If **Connector** does not appear as an integration type in the **Create new integration** dialog, your account does not yet have access.
+Enterprise Adobe accounts with a Developer or Administrator role get automatic access to submit a connector as a private link or internal listing. Personal Adobe accounts must first request access using the [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pag3db7joqgtwXSOv/form). Public listings require separate approval for both personal and enterprise users. Submit the [same interest form](https://airtable.com/appiNBn2w6uT0cpkR/pag3db7joqgtwXSOv/form) so the team can review your use case. If **Connector** does not appear as an integration type in the **Create new integration** dialog, your account does not yet have access. See [Account access at a glance](../getting-started.md#account-access-at-a-glance) for a full breakdown by account type.
 
 ## Before you submit
 

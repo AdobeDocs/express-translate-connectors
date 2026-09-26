@@ -34,6 +34,18 @@ Before you continue, confirm you have the following:
 - **A Developer or Administrator role** assigned to your Adobe account by your organization's Adobe administrator. This role is required to enable Add-on Development mode in Adobe Express, which gives you access to the Connector Playground. If you do not have this role, request it from your admin before continuing. If you are unsure who your administrator is, see [How do I contact my org administrator?](https://helpx.adobe.com/enterprise/kb/contact-administrator.html).
 - **Node.js 18.8.0 or later**, required to run the TypeScript starter project. You can implement your connector in any language, but the starter project requires Node.js.
 
+### Account access at a glance
+
+What your Adobe Express account can access depends on its type, role, and whether it's been approved through the [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pag3db7joqgtwXSOv/form):
+
+| Account type | Connector Playground | Private share link | Internal listing | Public listing |
+|---|---|---|---|---|
+| Personal, not yet approved | No access | No access | Not available | No access |
+| Personal, approved through the interest form | Available | Available | Not available | Available |
+| Enterprise, Developer or Administrator role | Always available | Always available | Always available | Requires separate approval through the interest form |
+
+Internal listings are never available to personal accounts, regardless of approval status; they require an enterprise Adobe account. Public listings always require approval through the interest form, even for enterprise accounts that already have automatic access to the Playground and to private and internal submissions.
+
 ## Developer Resources
 
 Three downloadable resources are provided to help you build your connector.
