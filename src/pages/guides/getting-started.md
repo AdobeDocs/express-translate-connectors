@@ -10,7 +10,7 @@ keywords:
 nav-title: Getting Started
 content_type: how-to
 sidebar: adobe-express-connectors
-last-updated: 2026-09-25
+last-updated: 2026-09-28
 hideBreadcrumbNav: true
 ---
 

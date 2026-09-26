@@ -10,7 +10,7 @@ keywords:
   - connector-playground
 nav-title: Connector Playground
 sidebar: adobe-express-connectors
-last-updated: 2026-09-25
+last-updated: 2026-09-28
 hideBreadcrumbNav: true
 ---
 
@@ -185,19 +185,21 @@ When **None** is selected, no additional fields are shown. `authConfig` is omitt
 
 When **Secure API Key** is selected, no key input field appears. `authConfig` becomes `{ "type": "SECURE_API_KEY" }` automatically. You then manually add `$secureApiKey` as the header value for any authenticated endpoint in the API Configuration section, the same way you would add `$apiKey` for a plain API Key connector.
 
-![Authentication Type dropdown open in Connector Playground with Secure API Key selected, and the Headers field showing x-api-key mapped to the dollar sign secureApiKey placeholder](img/secure-api-in-dropdown.png)
+Selecting **Secure API Key** from the Authentication Type dropdown also triggers a toast reminding you that Secure API Key connectors cannot be tested end to end in the Playground, and disables the **Connect** button for the rest of the session.
 
-![Connector Playground with Secure API Key selected as the authentication type and the API Configuration section expanded for the locales endpoint, showing the same x-api-key and dollar sign secureApiKey header pair](img/secure-api-key-selected.png)
+![Authentication Type dropdown open in Connector Playground with Secure API Key selected, and the Headers field showing x-api-key mapped to the dollar sign secureApiKey placeholder. A blue info toast is shown reading Secure API keys can't be tested in Playground, Create a new listing to configure your secure API keys and test your connector, and the Connect button is disabled](img/secure-api-key.png)
 
 <InlineAlert slots="heading, text" variant="warning" />
 
 **Secure API Key cannot be tested end to end in the Playground in this release**
 
-Selecting Secure API Key generates a manifest with the correct schema, but the Playground cannot exercise Adobe's secure bridge yet, so **Connect** will not validate a Secure API Key connector end to end. Follow this flow instead:
+Generate and save your manifest with Secure API Key, but test and validate the connector itself with **API Key** first. Use the recommended flow below.
+
+**Recommended flow:**
 
 1. Configure and test your connector with **API Key** in the Playground until the end-to-end flow works as expected.
 2. Once testing is complete, switch **Authentication Type** to **Secure API Key**. This regenerates `authConfig` and clears the plain key value.
-3. Go straight to **More > Download code** to save the manifest. Do not select **Connect** or **Reconnect** after switching: there's nothing for it to validate.
+3. Select **More > Download code** to save the manifest.
 4. Upload that manifest through the [submission portal](./submission/index.md). Creating a listing, private, internal, or public, is what assigns and registers your connector ID with Adobe.
 5. Follow the registration and handoff steps in [Register your Secure API Key with Adobe](./submission/index.md#register-your-secure-api-key-with-adobe) to complete setup with the Adobe team.
 
@@ -280,11 +282,11 @@ Adobe Express renders the Translate panel UI based on your `uiConfig`. Your `/lo
 
 ![Translate panel showing the locale MultiSelectPicker open with Spanish and French selected and locales grouped under Popular languages and Other languages headings](img/locale-multipicker.png)
 
-Example of a Locale "MultiSelectPicker" component populated with grouped categories from your `/locales` response
+Example of a Locale `MultiSelectPicker` component populated with grouped categories from your `/locales` response
 
 ![Translate panel showing the tone Picker open with Formal, Informal, and Don't change the tone options visible](img/tone-picker-open.png)
 
-Example of a Tone "Picker" component populated from your `/tones` response
+Example of a Tone `Picker` component populated from your `/tones` response
 
 ## The Connect loop
 
@@ -402,12 +404,32 @@ For more details and diagnostic steps, see the [Troubleshooting guide](../suppor
 
 Select **More** in the top-right corner to access session and utility options:
 
+![More menu open in Connector Playground showing Manage sessions, Start a new session, Download manifest, Upload manifest, and View connector docs options](img/more-menu.png)
+
 | Menu item | Description |
 | :---- | :---- |
 | **Manage session** | View and switch between your saved connector sessions. Only connector sessions are shown when accessed from within Connector Playground. |
 | **Start a new session** | Creates a new connector session with a blank configuration. |
 | **Download code** | Downloads the generated `manifest.json` for your current session. |
+| **Upload manifest** | Opens a file picker so you can select a local `manifest.json` to load into the current session. See [Upload a manifest](#upload-a-manifest) below. |
 | **View docs** | Opens the Adobe Express Translate Connectors developer documentation. |
+
+#### Upload a manifest
+
+Use **More > Upload manifest** to load an existing `manifest.json` into your current Playground session instead of rebuilding it field by field in the form builder. This is useful when you already have a manifest from a previous session, a teammate, or the [submission portal](./submission/index.md) and want to continue editing it in the Playground.
+
+1. Select **More > Upload manifest**.
+2. Choose a `manifest.json` file from your local file system in the file picker that opens.
+3. A **Replace manifest** confirmation dialog appears, warning that your current manifest will be replaced with the uploaded file. Select **Continue** to proceed, or **Cancel** to keep your current manifest.
+
+   ![Replace manifest confirmation dialog in Connector Playground asking whether your current manifest will be replaced with the uploaded file, with Cancel and Continue buttons](img/replace-manifest-dialog.png)
+
+4. Once confirmed, the Playground shows a dialog indicating it's validating the uploaded manifest, then repopulates the form builder with its values.
+5. A green toast confirms the manifest was updated successfully.
+
+If the uploaded manifest uses **Secure API Key** authentication, the Playground also shows the info toast described in [Secure API Key](#secure-api-key) and disables **Connect**, since selecting Secure API Key always disables end-to-end testing regardless of how the manifest was loaded.
+
+If the uploaded file fails manifest validation, the Playground surfaces the same inline error indicators described in [The Connect loop](#the-connect-loop) instead of replacing the current session.
 
 ### Sessions
 

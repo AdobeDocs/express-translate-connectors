@@ -13,8 +13,7 @@ nav-title: Translate API
 content_type: reference
 sidebar: adobe-express-connectors
 api-version: "1"
-schema-source: /static/translate-connector-api.yaml
-last-updated: 2026-09-25
+last-updated: 2026-09-28
 hideBreadcrumbNav: true
 ---
 
