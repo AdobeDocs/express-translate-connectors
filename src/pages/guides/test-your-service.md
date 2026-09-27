@@ -140,7 +140,7 @@ After your service and manifest pass local validation, load the connector in the
 
 When testing in the Playground, verify:
 
-1. **Authentication flow completes:** the Connect button transitions to a Connected state. This check doesn't apply to Secure API Key in this release: the Playground can't validate Secure API Key connectivity end to end. Test with API Key instead, then switch to Secure API Key and download the manifest once testing is complete. See [Connector Playground: Secure API Key](connector-playground.md#secure-api-key).
+1. **Authentication flow completes:** the Connect button transitions to a Connected state. This check doesn't apply to Secure API Key: the Playground can't validate Secure API Key connectivity end to end. Test with API Key instead, then switch to Secure API Key and download the manifest once testing is complete. See [Connector Playground: Secure API Key](connector-playground.md#secure-api-key).
 2. **Locales populate correctly:** the language picker displays the locales returned by your `/locales` endpoint.
 3. **Tones populate correctly:** if supported, the tone picker displays the tones returned by your `/tones` endpoint.
 4. **Translation returns the correct result:** the translated output matches the expected translation.

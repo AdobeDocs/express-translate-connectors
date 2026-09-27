@@ -191,7 +191,7 @@ Selecting **Secure API Key** from the Authentication Type dropdown also triggers
 
 <InlineAlert slots="heading, text" variant="warning" />
 
-**Secure API Key cannot be tested end to end in the Playground in this release**
+**Secure API Key cannot be tested end to end in the Playground**
 
 Generate and save your manifest with Secure API Key, but test and validate the connector itself with **API Key** first. Use the recommended flow below.
 

@@ -66,7 +66,7 @@ See [Endpoint Setup: Secure API Key](../../guides/endpoint-setup.md#option-3-sec
 
 ## Can I test Secure API Key connectors end-to-end in the Connector Playground?
 
-No, not in this release. The Playground lets you select Secure API Key to generate a manifest with the correct schema, but it can't validate connectivity through Adobe's secure bridge yet. Configure and test your connector with API Key in the Playground first, then switch to Secure API Key and download the manifest before submitting it. See [Connector Playground: Secure API Key](../../guides/connector-playground.md#secure-api-key) and [Endpoint Setup: Secure API Key](../../guides/endpoint-setup.md#option-3-secure-api-key) for the full flow.
+No. The Playground lets you select Secure API Key to generate a manifest with the correct schema, but it can't validate connectivity through Adobe's secure bridge. Configure and test your connector with API Key in the Playground first, then switch to Secure API Key and download the manifest before submitting it. See [Connector Playground: Secure API Key](../../guides/connector-playground.md#secure-api-key) and [Endpoint Setup: Secure API Key](../../guides/endpoint-setup.md#option-3-secure-api-key) for the full flow.
 
 ## Do all connectors route through Adobe's bridge?
 
@@ -100,7 +100,7 @@ Use the form builder in the Connector Playground. It validates your manifest in 
 
 ## Do I edit the manifest JSON directly?
 
-No. Connector Playground generates the manifest through the form builder. The generated JSON is visible in the Playground, but direct editing is not supported in this release.
+No. Connector Playground generates the manifest through the form builder. The generated JSON is visible in the Playground, but direct editing isn't supported: the panel is read-only, and all changes go through the form builder.
 
 ## Can I upload or paste an existing manifest into the Playground?
 

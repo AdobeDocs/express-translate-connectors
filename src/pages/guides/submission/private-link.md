@@ -37,15 +37,17 @@ A private share link is a unique URL you can send to anyone to use or test your 
 
 - **Account required:** Sign in with an enterprise Adobe account with the Administrator or Developer role in the [Adobe Admin Console](https://adminconsole.adobe.com/), or a personal Adobe account approved through the [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pag3db7joqgtwXSOv/form). Enterprise accounts without this role are blocked from all submission paths before reaching the submission UI.
 - **Test first:** Configure and validate your connector in the [Connector Playground](../connector-playground.md) before sharing the link.
-- **Treat the link like a credential:** Anyone with the URL can install the connector, provided they're signed in with an enterprise Adobe account. Adobe Express does not require sign-in scoped to your organization for private share link installs.
+- **Treat the link like a credential:** Anyone with the URL can install the connector, provided they're signed in with an enterprise Adobe account, or a personal Adobe account approved through the [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pag3db7joqgtwXSOv/form). Adobe Express does not require sign-in scoped to your organization for private share link installs.
 - **Getting ready for a public listing?** Create a private share link first when you want to test with specific people yourself, or ship updates outside of a listing review cycle, then later you can come back and create a public listing. See [Get your connector ready for review](public-listing.md#get-your-connector-ready-for-review) for what's needed when you're ready to create a public listing.
 - **Secure API Key credential:** If your connector uses Secure API Key authentication, add your key as a credential from your connector's **Settings** tab. It's required regardless of which listing type you use. See [Register your Secure API Key with Adobe](index.md#register-your-secure-api-key-with-adobe).
 
-<InlineAlert slots="heading, text" variant="warning" />
+<InlineAlert slots="heading, text1, text2" variant="warning" />
 
-**This link won't work until registration completes**
+**This link may not work for everyone you share it with**
 
 If your connector uses Secure API Key authentication, anyone who opens this private link will hit an authentication error until you've added your Secure API Key credential.
+
+Separately, approval through the Connector interest form is per-account, not per-link: if you share this link with a tester who is signed in with a personal Adobe account, they can only open it if their own account has been separately approved. An enterprise Adobe account never needs this; any user signed in with an enterprise account can open the link, regardless of who created it.
 
 ## Submission steps
 

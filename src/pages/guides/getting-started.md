@@ -44,6 +44,12 @@ What your Adobe Express account can access depends on its type, role, and whethe
 | Personal, approved through the interest form | Available | Available | Not available | Available |
 | Enterprise, Developer or Administrator role | Always available | Always available | Always available | Requires separate approval through the interest form |
 
+![Account access at a glance](img/connector-access-flow.svg)
+
+<InlineAlert slots="heading, text" variant="info" />
+
+**Two exceptions to keep in mind**
+
 Internal listings are never available to personal accounts, regardless of approval status; they require an enterprise Adobe account. Public listings always require approval through the interest form, even for enterprise accounts that already have automatic access to the Playground and to private and internal submissions.
 
 ## Developer Resources

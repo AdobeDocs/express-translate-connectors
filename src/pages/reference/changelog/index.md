@@ -20,15 +20,19 @@ hideBreadcrumbNav: true
 
 ## 2026-09-28
 
+Adobe Express Translate Connectors is now **generally available (GA)**. This documentation is public, and eligible accounts can use the Connector Playground and submit connectors without prerelease program enrollment.
+
 ### Added
 
 - Self-service Secure API Key credential management. Add, update, or delete your connector's Secure API Key from the **Connector credentials** section of the **Settings** tab in Your integrations. Takes effect immediately, no email or confirmation from Adobe required. A connector has a single Secure API Key credential that applies globally, replacing the previous per-organization registration process. See [Register your Secure API Key with Adobe](../../guides/submission/index.md#register-your-secure-api-key-with-adobe).
+- Connector Playground: **Upload a manifest**. Use **More > Upload manifest** to load an existing `manifest.json` into your current session instead of rebuilding it field by field in the form builder. See [Upload a manifest](../../guides/connector-playground.md#upload-a-manifest).
+- Connector Playground: a reminder toast now appears when you select **Secure API Key** in the Authentication Type dropdown, and the **Connect** button is disabled for the rest of the session since Secure API Key connectors can't be tested end to end in the Playground yet. See [Secure API Key](../../guides/connector-playground.md#secure-api-key).
 
 ### Changed
 
-- Adobe Express Translate Connectors documentation is now publicly available. No prerelease program enrollment is required to read it.
 - Enterprise Adobe accounts with a Developer or Administrator role get automatic access to the Connector Playground and connector submission for private link sharing and internal listings.
 - Personal Adobe accounts must request access using the new [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pag3db7joqgtwXSOv/form) before using the Connector Playground or submitting a connector.
+- Personal Adobe accounts approved through the interest form can now open a private share link, not just create one. This requirement applies to anyone opening the link, not only its creator: an enterprise account, or a personal account separately approved through the interest form, is required either way. See [Private share link: Treat the link like a credential](../../guides/submission/private-link.md#before-you-begin).
 - Public listing distribution remains gated for every account, enterprise or personal, and requires separate approval. Request access using the same [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pag3db7joqgtwXSOv/form).
 
 ## 2026-09-08

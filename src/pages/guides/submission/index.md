@@ -133,7 +133,7 @@ A private share link, internal listing, or public listing for a Secure API Key c
 ### Add your credential
 
 1. If you don't already have one, create a connector integration: follow [Step 1 through Step 3](#access-your-integrations) to open Your integrations and create it. You don't need a listing or submission to do this.
-2. Build and test your connector using **API Key** in the [Connector Playground](../connector-playground.md). The Playground can only validate connectivity end to end with API Key in this release; Secure API Key is available in the dropdown for manifest generation only.
+2. Build and test your connector using **API Key** in the [Connector Playground](../connector-playground.md). The Playground can only validate connectivity end to end with API Key; Secure API Key is available in the dropdown for manifest generation only.
 3. Once testing is complete, switch **Authentication Type** to **Secure API Key** in the Playground and download the manifest. See [Connector Playground: Secure API Key](../connector-playground.md#secure-api-key) for the exact steps.
 4. Open the **Settings** tab for your connector integration and find the **Connector credentials** section.
 5. Click **Add credential**, select **API key**, and click **Next**.
