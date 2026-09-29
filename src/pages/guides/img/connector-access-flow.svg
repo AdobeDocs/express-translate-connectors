@@ -32,10 +32,10 @@
 <line x1="210" y1="510" x2="210" y2="636" stroke="#444441" stroke-width="1.5" marker-end="url(#arrow)"/>
 <text x="195" y="575" text-anchor="end" font-size="18" font-weight="700" fill="#2C2C2A">No</text>
 
-<rect x="90" y="640" width="240" height="120" rx="10" fill="#D3D1C7" stroke="#5F5E5A" stroke-width="1.5"/>
-<text x="210" y="670" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="700" fill="#2C2C2A">No access</text>
-<text x="210" y="700" text-anchor="middle" dominant-baseline="central" font-size="15" font-weight="500" fill="#444441">Connector Playground and</text>
-<text x="210" y="730" text-anchor="middle" dominant-baseline="central" font-size="15" font-weight="500" fill="#444441">submission not available</text>
+<rect x="80" y="640" width="260" height="120" rx="10" fill="#D3D1C7" stroke="#5F5E5A" stroke-width="1.5"/>
+<text x="210" y="670" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="700" fill="#2C2C2A">Not yet available</text>
+<text x="210" y="700" text-anchor="middle" dominant-baseline="central" font-size="15" font-weight="500" fill="#444441">Submit the interest form to</text>
+<text x="210" y="730" text-anchor="middle" dominant-baseline="central" font-size="15" font-weight="500" fill="#444441">unlock full access</text>
 
 <line x1="530" y1="510" x2="530" y2="636" stroke="#444441" stroke-width="1.5" marker-end="url(#arrow)"/>
 <text x="545" y="575" text-anchor="start" font-size="18" font-weight="700" fill="#2C2C2A">Yes</text>
@@ -55,7 +55,7 @@
 <text x="855" y="575" text-anchor="end" font-size="18" font-weight="700" fill="#2C2C2A">No</text>
 
 <rect x="740" y="640" width="260" height="120" rx="10" fill="#D3D1C7" stroke="#5F5E5A" stroke-width="1.5"/>
-<text x="870" y="670" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="700" fill="#2C2C2A">No access</text>
+<text x="870" y="670" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="700" fill="#2C2C2A">Not yet available</text>
 <text x="870" y="700" text-anchor="middle" dominant-baseline="central" font-size="15" font-weight="500" fill="#444441">Contact your org admin to</text>
 <text x="870" y="730" text-anchor="middle" dominant-baseline="central" font-size="15" font-weight="500" fill="#444441">request the role</text>
 

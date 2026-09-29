@@ -18,9 +18,9 @@ hideBreadcrumbNav: true
 
 ## What is an Adobe Express Connector?
 
-An Adobe Express Connector is a manifest-driven integration that lets your external service plug directly into Adobe Express workflows. You implement a set of HTTP endpoints, generate a `manifest.json` file, and Adobe Express handles the UI rendering, credential exchange, and API orchestration on behalf of your users. 
+An Adobe Express Connector is a manifest-driven integration that lets your external service plug directly into Adobe Express workflows. You implement a set of HTTP endpoints, generate a `manifest.json` file, and Adobe Express handles the UI rendering, credential exchange, and API orchestration on behalf of your users.
 
-The first phase of the connectors support focuses on a single connector type: **Translate**. Your service provides translation capabilities and Adobe Express surfaces them through the built-in Translate panel.
+Your service provides translation capabilities and Adobe Express surfaces them through the built-in Translate panel.
 
 ## What you can build
 

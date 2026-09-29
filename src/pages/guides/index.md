@@ -19,7 +19,13 @@ Build native service integrations for Adobe Express using a declarative, manifes
 
 Adobe Express Translate Connectors integrate third-party services directly into native Adobe Express features. You configure your integration through the Connector Playground, which generates a `manifest.json` that Adobe Express uses to render the UI and route API calls to your service. Connectors do not require a panel or custom UI code.
 
-Adobe Express currently supports **Translate** connectors, which power the Translate feature in Adobe Express.
+Adobe Express currently supports **Translate** connectors, which power the Translate feature in Adobe Express. Translate connectors are available only to Adobe Express users signed in with an enterprise account.
+
+<InlineAlert slots="heading, text" variant="info" />
+
+**Before you start: check your account access**
+
+Enterprise Adobe accounts with a Developer or Administrator role get the Connector Playground and submission for private share links and internal listings by default. Personal Adobe accounts, and public listing for any account type, require approval through the [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pag3db7joqgtwXSOv/form) first. See [Account access at a glance](getting-started.md#account-access-at-a-glance) for the full breakdown.
 
 <DiscoverBlock slots="heading, link, text" width="33%"/>
 

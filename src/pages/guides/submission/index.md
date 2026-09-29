@@ -45,19 +45,19 @@ When your connector is tested and ready, you have three ways to distribute it th
 
 ## Choose your listing type
 
-| Option | Use it when | Visibility |
-|---|---|---|
-| [Private share link](private-link.md) | You need to share with specific testers or stakeholders before, or instead of, publishing the connector. | Anyone with the link, subject to the connector's authentication requirements and the enterprise account requirement below. |
-| [Internal listing](internal-listing.md) | You build for your own enterprise users and want centralized discovery without publishing the connector. | Users in your enterprise organization, via the Translate service dropdown. |
-| [Public listing](public-listing.md) | You want broad distribution after Adobe review. | Adobe Express users in enterprises where the connector is enabled after review, via the Translate service dropdown. |
-
-You can publish more than one path for the same connector over time. For example, share a private link with testers first, then promote the connector to a public listing.
-
 <InlineAlert slots="heading, text" variant="info" />
 
 Account and access requirements
 
 Translate connectors are supported only for Adobe Express users signed in with an enterprise account, no matter which listing type you choose. Publisher access to submit a connector also depends on your account type and role. See [Before you submit](#before-you-submit) below, and [Account access at a glance](../getting-started.md#account-access-at-a-glance) for a full breakdown.
+
+| Option | Use it when | Visibility |
+|---|---|---|
+| [Private share link](private-link.md) | You need to share with specific testers or stakeholders before, or instead of, publishing the connector. | Anyone with the link. Enterprise account required. |
+| [Internal listing](internal-listing.md) | You build for your own enterprise users and want centralized discovery without publishing the connector. | Users in your enterprise organization, via the Translate service dropdown. Enterprise account required. |
+| [Public listing](public-listing.md) | You want broad distribution after Adobe review. | Adobe Express users in enterprises where the connector is enabled after review, via the Translate service dropdown. Enterprise account required. |
+
+You can publish more than one path for the same connector over time. For example, share a private link with testers first, then promote the connector to a public listing.
 
 ## Before you submit
 
@@ -65,12 +65,12 @@ Confirm these basics before you start a submission:
 
 1. **Sign in with the right account.** Your account type and role determine which paths are available:
    - **Personal Adobe account:** Must first request access using the [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pag3db7joqgtwXSOv/form). Once approved, you can create private share links and public listings. Internal listings are not available.
-   - **Enterprise Adobe account with Administrator or Developer role:** Automatic access to private share links and internal listings. Public listings require separate approval. Submit the [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pag3db7joqgtwXSOv/form) for the team to review your use case.
+   - **Enterprise Adobe account with Administrator or Developer role:** Automatic access to private share links and internal listings. Public listing also requires approval through the [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pag3db7joqgtwXSOv/form).
    - **Enterprise Adobe account without Administrator or Developer role:** Blocked from all submission paths before reaching the submission UI. Contact your organization's Adobe administrator to request the role. If you're not sure who that is, see [How do I contact my org administrator?](https://helpx.adobe.com/enterprise/kb/contact-administrator.html)
 2. **Test your connector.** Validate it in [Connector Playground](../connector-playground.md) and check the manifest against the [connector manifest schema](../../reference/manifest-schema/index.md).
 3. **Decide on distribution.** Use the table above to choose between a private share link, an internal listing, or a public listing.
 4. **Prepare your assets.** Every path needs a 144x144 px icon, a connector manifest JSON file, and a connector name. Internal and public listings also need full listing copy (summary, description, help URL), 1 to 5 screenshots at 1360x800 px, a publisher profile, and trader details. Public listings additionally need monetization details, and an AI usage disclosure if your connector uses generative AI. See the [Listing field reference](#listing-field-reference) for every field.
-5. **Add your Secure API Key credential, if applicable.** If your connector uses Secure API Key authentication, add your key as a credential from your connector's **Settings** tab. This is required before any listing type (private link, internal, or public) will actually work, not just before public review. See [Register your Secure API Key with Adobe](#register-your-secure-api-key-with-adobe).
+5. **Configure your Global API Key, if applicable.** If your connector uses Secure API Key authentication, configure your key as a Global API Key credential from your connector's **Settings** tab. This is required before any listing type (private link, internal, or public) will actually work, not just before public review. See [Register your Secure API Key with Adobe](#register-your-secure-api-key-with-adobe).
 
 ## Access your integrations
 
@@ -120,21 +120,21 @@ What happens next depends on the path you chose:
 
 - **Private share link:** The share link is generated and copied to your clipboard right away. Anyone who has the link can install the connector in Adobe Express. Later, you can copy the link again, upload a new manifest to ship updates to everyone who has it, promote the connector to a public listing, or delete the link to revoke access.
 - **Internal listing:** The connector publishes to your Adobe enterprise organization without Adobe review. It appears as an option in the Translate service dropdown for users signed in to your organization. Later, you can ship updates by uploading a new manifest under the listing.
-- **Public listing:** Public listing distribution remains gated for every account, enterprise or personal. If it isn't enabled for your organization yet, choosing a public listing opens a **Request access to public listing** dialog explaining that public listing is available by request, and clicking **Request access** takes you to the [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pag3db7joqgtwXSOv/form). If you already submitted the form, no further action is needed while your request is under review. Once enabled, Adobe reviews the submission, which typically takes 5 to 10 days, and emails you when the review is complete. Approval does not automatically make the connector available. Adobe enables it only for the organizations you designate by contacting Adobe after approval. See [After Adobe approves your listing](public-listing.md#after-adobe-approves-your-listing) for the required steps. Later, you can update the listing or release new versions by reopening it in [Your integrations](#access-your-integrations). Updates go through Adobe review again.
+- **Public listing:** Public listing has two separate approval stages. First, public listing distribution itself is gated for every account, enterprise or personal: if it isn't enabled for your account yet, choosing a public listing opens a **Request access to public listing** dialog, and clicking **Request access** takes you to the [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pag3db7joqgtwXSOv/form). If you already submitted the form, no further action is needed while your request is under review. Once you're approved, you can create and submit a public listing, which starts the second stage: Adobe reviews the connector itself, typically in 5 to 10 days, and emails you when the review is complete. Approval does not automatically make the connector available to users. Adobe enables it only for the enterprises you designate by contacting Adobe after approval, and only Adobe Express users signed in with an enterprise account in one of those enterprises can access it. See [After Adobe approves your listing](public-listing.md#after-adobe-approves-your-listing) for the required steps. Later, you can update the listing or release new versions by reopening it in [Your integrations](#access-your-integrations). Updates go through Adobe review again.
 
 ## Register your Secure API Key with Adobe
 
-If your connector uses Secure API Key authentication (`authConfig.type: "SECURE_API_KEY"`), configuring your manifest and backend isn't enough on its own. Adobe's secure bridge only forwards requests for connectors that have a Secure API Key credential added, so you also need to add your key from your connector's **Settings** tab. This applies no matter which listing type you use: private share link, internal listing, or public listing. A connector has a single Secure API Key credential that applies globally; there's no per-organization registration.
+If your connector uses Secure API Key authentication (`authConfig.type: "SECURE_API_KEY"`), it needs an additional registration step with Adobe: configuring your manifest and backend isn't enough on its own. Secure API Key authentication cannot be tested through the Connector Playground, so you register and validate the key from your connector's **Settings** tab instead.
 
 <InlineAlert slots="text" variant="warning" />
 
-A private share link, internal listing, or public listing for a Secure API Key connector won't work for anyone until you've added your credential. If you're preparing a public listing, add it before you click **Submit for review** so the review team can test your connector.
+A private share link, internal listing, or public listing for a Secure API Key connector won't work for anyone until you've configured your Global API Key. If you're preparing a public listing, add it before you click **Submit for review** so the review team can test your connector.
 
-### Add your credential
+### Configure your Global API Key
 
-1. If you don't already have one, create a connector integration: follow [Step 1 through Step 3](#access-your-integrations) to open Your integrations and create it. You don't need a listing or submission to do this.
-2. Build and test your connector using **API Key** in the [Connector Playground](../connector-playground.md). The Playground can only validate connectivity end to end with API Key; Secure API Key is available in the dropdown for manifest generation only.
-3. Once testing is complete, switch **Authentication Type** to **Secure API Key** in the Playground and download the manifest. See [Connector Playground: Secure API Key](../connector-playground.md#secure-api-key) for the exact steps.
+1. Build and test your connector using **API Key** in the [Connector Playground](../connector-playground.md). The Playground can only validate connectivity end to end with API Key; Secure API Key is available in the dropdown for manifest generation only.
+2. Once testing is complete, switch **Authentication Type** to **Secure API Key** in the Playground and download the manifest. See [Connector Playground: Secure API Key](../connector-playground.md#secure-api-key) for the exact steps. You're now ready to use this manifest when creating your connector listing.
+3. Create or open your connector listing using this manifest: follow [Step 1 through Step 3](#access-your-integrations) to open Your integrations, then create or select your connector integration and upload the manifest under **Version details**.
 4. Open the **Settings** tab for your connector integration and find the **Connector credentials** section.
 5. Click **Add credential**, select **API key**, and click **Next**.
 6. Enter your key or secret in the **API key / secret** field and click **Save**. The value is encrypted and never exposed in your application code; you won't be able to view it again after saving, but you can replace or delete it later.
@@ -147,7 +147,7 @@ A private share link, internal listing, or public listing for a Secure API Key c
 
 Adobe Express routes Secure API Key requests through the bridge with your credential injected as soon as you save it, no confirmation email required. To update or remove the key later, return to **Connector credentials** and use the edit or delete action.
 
-### Find an organization ID
+### Configure org-based API key
 
 An administrator for the enterprise can find the organization ID (also called the IMS Org ID) in the [Adobe Admin Console](https://adminconsole.adobe.com/). Alternatively, any Adobe Express user signed in to that enterprise can find the IMS Org ID in browser DevTools: open the **Application** tab, select **Session storage > https://express.adobe.com/**, choose the key prefixed `adobeid_ims_profile/`, and look for the `ownerOrg` value.
 
