@@ -1,97 +1,20 @@
-<svg width="100%" viewBox="0 0 1580 1290" xmlns="http://www.w3.org/2000/svg" role="img" font-family="Roboto, 'Helvetica Neue', Arial, sans-serif">
-<title>Adobe Express Translate Connector developer access flow</title>
-<desc>Decision flow showing what developer access a Personal Adobe account versus an Enterprise Adobe account gets to the Connector Playground, private share link, internal listing, and public listing, depending on interest-form approval and org role.</desc>
-<defs>
-<marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-<path d="M2 1L8 5L2 9" fill="none" stroke="#444441" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-</marker>
-</defs>
-
-<rect x="60" y="400" width="650" height="450" rx="20" fill="#E6F1FB" stroke="#85B7EB" stroke-width="1"/>
-<rect x="730" y="400" width="800" height="790" rx="20" fill="#EAF3DE" stroke="#97C459" stroke-width="1"/>
-
-<rect x="550" y="30" width="300" height="64" rx="10" fill="#D3D1C7" stroke="#5F5E5A" stroke-width="1.5"/>
-<text x="700" y="62" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="700" fill="#2C2C2A">Sign in to Adobe Express</text>
-
+<svg width="100%" viewBox="0 0 1580 1430" xmlns="http://www.w3.org/2000/svg" role="img" font-family="Roboto, 'Helvetica Neue', Arial, sans-serif">
+<title>Adobe Express connector developer access flow - distinct outcomes</title>
+<desc>Updated developer access decision flow with forward-looking request actions and separate endpoints.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#444441" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+<rect x="10" y="400" width="700" height="750" rx="20" fill="#E6F1FB" stroke="#85B7EB" stroke-width="1"/>
+<rect x="730" y="400" width="800" height="940" rx="20" fill="#EAF3DE" stroke="#97C459" stroke-width="1"/>
+<rect x="550" y="30" width="300" height="64" rx="10" fill="#D3D1C7" stroke="#5F5E5A" stroke-width="1.5"/><text x="700" y="62" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="700" fill="#2C2C2A">Sign in to Adobe Express</text>
 <line x1="700" y1="94" x2="700" y2="166" stroke="#444441" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-<polygon points="700,170 870,280 700,390 530,280" fill="#CECBF6" stroke="#534AB7" stroke-width="1.5"/>
-<text x="700" y="267" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="700" fill="#26215C">Personal account or</text>
-<text x="700" y="293" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="700" fill="#26215C">enterprise account?</text>
-
-<path d="M530,280 L370,280 L370,406" fill="none" stroke="#444441" stroke-width="1.5" marker-end="url(#arrow)"/>
-<text x="450" y="262" text-anchor="middle" font-size="18" font-weight="700" fill="#2C2C2A">Personal account</text>
-
-<path d="M870,280 L1030,280 L1030,406" fill="none" stroke="#444441" stroke-width="1.5" marker-end="url(#arrow)"/>
-<text x="950" y="262" text-anchor="middle" font-size="18" font-weight="700" fill="#2C2C2A">Enterprise account</text>
-
-<polygon points="370,410 530,510 370,610 210,510" fill="#CECBF6" stroke="#534AB7" stroke-width="1.5"/>
-<text x="370" y="497" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="700" fill="#26215C">Approved through the</text>
-<text x="370" y="523" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="700" fill="#26215C">Connector interest form?</text>
-
-<line x1="210" y1="510" x2="210" y2="636" stroke="#444441" stroke-width="1.5" marker-end="url(#arrow)"/>
-<text x="195" y="575" text-anchor="end" font-size="18" font-weight="700" fill="#2C2C2A">No</text>
-
-<rect x="80" y="640" width="260" height="120" rx="10" fill="#D3D1C7" stroke="#5F5E5A" stroke-width="1.5"/>
-<text x="210" y="670" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="700" fill="#2C2C2A">Not yet available</text>
-<text x="210" y="700" text-anchor="middle" dominant-baseline="central" font-size="15" font-weight="500" fill="#444441">Submit the interest form to</text>
-<text x="210" y="730" text-anchor="middle" dominant-baseline="central" font-size="15" font-weight="500" fill="#444441">unlock full access</text>
-
-<line x1="530" y1="510" x2="530" y2="636" stroke="#444441" stroke-width="1.5" marker-end="url(#arrow)"/>
-<text x="545" y="575" text-anchor="start" font-size="18" font-weight="700" fill="#2C2C2A">Yes</text>
-
-<rect x="370" y="640" width="320" height="180" rx="10" fill="#B5D4F4" stroke="#185FA5" stroke-width="1.5"/>
-<text x="530" y="670" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="700" fill="#042C53">Full developer access</text>
-<text x="530" y="700" text-anchor="middle" dominant-baseline="central" font-size="15" font-weight="500" fill="#0C447C">Connector Playground, private</text>
-<text x="530" y="730" text-anchor="middle" dominant-baseline="central" font-size="15" font-weight="500" fill="#0C447C">share link, and public listing</text>
-<text x="530" y="760" text-anchor="middle" dominant-baseline="central" font-size="15" font-weight="500" fill="#0C447C">(Internal listing requires an</text>
-<text x="530" y="790" text-anchor="middle" dominant-baseline="central" font-size="15" font-weight="500" fill="#0C447C">enterprise account)</text>
-
-<polygon points="1030,410 1190,510 1030,610 870,510" fill="#CECBF6" stroke="#534AB7" stroke-width="1.5"/>
-<text x="1030" y="497" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="700" fill="#26215C">Assigned Developer or</text>
-<text x="1030" y="523" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="700" fill="#26215C">Administrator role?</text>
-
-<line x1="870" y1="510" x2="870" y2="636" stroke="#444441" stroke-width="1.5" marker-end="url(#arrow)"/>
-<text x="855" y="575" text-anchor="end" font-size="18" font-weight="700" fill="#2C2C2A">No</text>
-
-<rect x="740" y="640" width="260" height="120" rx="10" fill="#D3D1C7" stroke="#5F5E5A" stroke-width="1.5"/>
-<text x="870" y="670" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="700" fill="#2C2C2A">Not yet available</text>
-<text x="870" y="700" text-anchor="middle" dominant-baseline="central" font-size="15" font-weight="500" fill="#444441">Contact your org admin to</text>
-<text x="870" y="730" text-anchor="middle" dominant-baseline="central" font-size="15" font-weight="500" fill="#444441">request the role</text>
-
-<line x1="1190" y1="510" x2="1190" y2="636" stroke="#444441" stroke-width="1.5" marker-end="url(#arrow)"/>
-<text x="1205" y="575" text-anchor="start" font-size="18" font-weight="700" fill="#2C2C2A">Yes</text>
-
-<rect x="1030" y="640" width="320" height="150" rx="10" fill="#B5D4F4" stroke="#185FA5" stroke-width="1.5"/>
-<text x="1190" y="670" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="700" fill="#042C53">Default access granted</text>
-<text x="1190" y="700" text-anchor="middle" dominant-baseline="central" font-size="15" font-weight="500" fill="#0C447C">Connector Playground, private</text>
-<text x="1190" y="730" text-anchor="middle" dominant-baseline="central" font-size="15" font-weight="500" fill="#0C447C">share link, and internal listing</text>
-<text x="1190" y="760" text-anchor="middle" dominant-baseline="central" font-size="15" font-weight="500" fill="#0C447C">available immediately</text>
-
-<line x1="1190" y1="790" x2="1190" y2="816" stroke="#444441" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-<polygon points="1190,820 1380,920 1190,1020 1000,920" fill="#CECBF6" stroke="#534AB7" stroke-width="1.5"/>
-<text x="1190" y="907" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="700" fill="#26215C">Approved for public</text>
-<text x="1190" y="933" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="700" fill="#26215C">listing access?</text>
-
-<line x1="1000" y1="920" x2="1000" y2="1046" stroke="#444441" stroke-width="1.5" marker-end="url(#arrow)"/>
-<text x="985" y="985" text-anchor="end" font-size="18" font-weight="700" fill="#2C2C2A">No</text>
-
-<rect x="880" y="1050" width="280" height="110" rx="10" fill="#D3D1C7" stroke="#5F5E5A" stroke-width="1.5"/>
-<text x="1020" y="1087" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="700" fill="#2C2C2A">Not yet available</text>
-<text x="1020" y="1123" text-anchor="middle" dominant-baseline="central" font-size="15" font-weight="500" fill="#444441">Prompts to request access</text>
-
-<line x1="1380" y1="920" x2="1380" y2="1046" stroke="#444441" stroke-width="1.5" marker-end="url(#arrow)"/>
-<text x="1395" y="985" text-anchor="start" font-size="18" font-weight="700" fill="#2C2C2A">Yes</text>
-
-<rect x="1220" y="1050" width="280" height="110" rx="10" fill="#B5D4F4" stroke="#185FA5" stroke-width="1.5"/>
-<text x="1360" y="1087" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="700" fill="#042C53">Available</text>
-<text x="1360" y="1123" text-anchor="middle" dominant-baseline="central" font-size="15" font-weight="500" fill="#0C447C">Public listing now enabled</text>
-
-<rect x="540" y="1225" width="20" height="20" rx="4" fill="#CECBF6" stroke="#534AB7" stroke-width="1.5"/>
-<text x="568" y="1240" font-size="15" font-weight="500" fill="#2C2C2A">Decision point</text>
-<rect x="750" y="1225" width="20" height="20" rx="4" fill="#B5D4F4" stroke="#185FA5" stroke-width="1.5"/>
-<text x="778" y="1240" font-size="15" font-weight="500" fill="#2C2C2A">Available</text>
-<rect x="920" y="1225" width="20" height="20" rx="4" fill="#D3D1C7" stroke="#5F5E5A" stroke-width="1.5"/>
-<text x="948" y="1240" font-size="15" font-weight="500" fill="#2C2C2A">Not available</text>
-</svg>
+<polygon points="700,170.0 870.0,280 700,390.0 530.0,280" fill="#CECBF6" stroke="#534AB7" stroke-width="1.5"/><text x="700" y="267" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="700" fill="#26215C">Personal account or</text><text x="700" y="293" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="700" fill="#26215C">enterprise account?</text>
+<path d="M530,280 L370,280 L370,406" fill="none" stroke="#444441" stroke-width="1.5" marker-end="url(#arrow)"/><text x="450" y="262" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="700" fill="#2C2C2A">Personal account</text>
+<path d="M870,280 L1030,280 L1030,406" fill="none" stroke="#444441" stroke-width="1.5" marker-end="url(#arrow)"/><text x="950" y="262" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="700" fill="#2C2C2A">Enterprise account</text>
+<polygon points="370,410.0 530.0,510 370,610.0 210.0,510" fill="#CECBF6" stroke="#534AB7" stroke-width="1.5"/><text x="370" y="497" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="700" fill="#26215C">Approved through the</text><text x="370" y="523" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="700" fill="#26215C">Connector interest form?</text><polygon points="1030,410.0 1190.0,510 1030,610.0 870.0,510" fill="#CECBF6" stroke="#534AB7" stroke-width="1.5"/><text x="1030" y="497" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="700" fill="#26215C">Assigned Developer or</text><text x="1030" y="523" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="700" fill="#26215C">Administrator role?</text>
+<line x1="210" y1="510" x2="210" y2="690" stroke="#444441" stroke-width="1.5" marker-end="url(#arrow)"/><text x="195" y="600" text-anchor="end" dominant-baseline="central" font-size="18" font-weight="700" fill="#2C2C2A">No</text><rect x="60" y="690" width="300" height="170" rx="12" fill="#F7F7F3" stroke="#9B9A94" stroke-width="1.5"/><text x="210.0" y="720" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="700" fill="#2C2C2A">Submit the interest form</text><text x="210.0" y="754" text-anchor="middle" dominant-baseline="central" font-size="15" font-weight="500" fill="#444441">to get started</text><text x="210.0" y="781" text-anchor="middle" dominant-baseline="central" font-size="15" font-weight="500" fill="#444441">Connector Playground and</text><text x="210.0" y="808" text-anchor="middle" dominant-baseline="central" font-size="15" font-weight="500" fill="#444441">submission open once approved</text>
+<line x1="530" y1="510" x2="530" y2="690" stroke="#444441" stroke-width="1.5" marker-end="url(#arrow)"/><text x="545" y="600" text-anchor="start" dominant-baseline="central" font-size="18" font-weight="700" fill="#2C2C2A">Yes</text><rect x="390" y="690" width="300" height="190" rx="12" fill="#B5D4F4" stroke="#185FA5" stroke-width="1.5"/><text x="540.0" y="720" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="700" fill="#042C53">Full developer access</text><text x="540.0" y="754" text-anchor="middle" dominant-baseline="central" font-size="15" font-weight="500" fill="#0C447C">Connector Playground, private</text><text x="540.0" y="781" text-anchor="middle" dominant-baseline="central" font-size="15" font-weight="500" fill="#0C447C">share link, and public listing</text><text x="540.0" y="808" text-anchor="middle" dominant-baseline="central" font-size="15" font-weight="500" fill="#0C447C">(Internal listing requires an</text><text x="540.0" y="835" text-anchor="middle" dominant-baseline="central" font-size="15" font-weight="500" fill="#0C447C">enterprise account)</text>
+<line x1="870" y1="510" x2="870" y2="690" stroke="#444441" stroke-width="1.5" marker-end="url(#arrow)"/><text x="855" y="600" text-anchor="end" dominant-baseline="central" font-size="18" font-weight="700" fill="#2C2C2A">No</text><rect x="740" y="690" width="300" height="170" rx="12" fill="#F7F7F3" stroke="#9B9A94" stroke-width="1.5"/><text x="890.0" y="720" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="700" fill="#2C2C2A">Request the role</text><text x="890.0" y="754" text-anchor="middle" dominant-baseline="central" font-size="15" font-weight="500" fill="#444441">from your org admin to</text><text x="890.0" y="781" text-anchor="middle" dominant-baseline="central" font-size="15" font-weight="500" fill="#444441">unlock submission</text><text x="890.0" y="808" text-anchor="middle" dominant-baseline="central" font-size="15" font-weight="500" fill="#444441">(Playground already available)</text>
+<line x1="1190" y1="510" x2="1190" y2="690" stroke="#444441" stroke-width="1.5" marker-end="url(#arrow)"/><text x="1205" y="600" text-anchor="start" dominant-baseline="central" font-size="18" font-weight="700" fill="#2C2C2A">Yes</text><rect x="1060" y="690" width="300" height="170" rx="12" fill="#B5D4F4" stroke="#185FA5" stroke-width="1.5"/><text x="1210.0" y="720" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="700" fill="#042C53">Default access granted</text><text x="1210.0" y="754" text-anchor="middle" dominant-baseline="central" font-size="15" font-weight="500" fill="#0C447C">Connector Playground, private</text><text x="1210.0" y="781" text-anchor="middle" dominant-baseline="central" font-size="15" font-weight="500" fill="#0C447C">share link, and internal listing</text><text x="1210.0" y="808" text-anchor="middle" dominant-baseline="central" font-size="15" font-weight="500" fill="#0C447C">available immediately</text>
+<line x1="1210" y1="860" x2="1210" y2="920" stroke="#444441" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polygon points="1210,920.0 1400.0,1020 1210,1120.0 1020.0,1020" fill="#CECBF6" stroke="#534AB7" stroke-width="1.5"/><text x="1210" y="1007" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="700" fill="#26215C">Approved for public</text><text x="1210" y="1033" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="700" fill="#26215C">listing access?</text>
+<line x1="1020" y1="1020" x2="1020" y2="1200" stroke="#444441" stroke-width="1.5" marker-end="url(#arrow)"/><text x="1005" y="1110" text-anchor="end" dominant-baseline="central" font-size="18" font-weight="700" fill="#2C2C2A">No</text><rect x="850" y="1200" width="340" height="108" rx="12" fill="#F7F7F3" stroke="#9B9A94" stroke-width="1.5"/><text x="1020.0" y="1230" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="700" fill="#2C2C2A">Request public listing access</text><text x="1020.0" y="1264" text-anchor="middle" dominant-baseline="central" font-size="15" font-weight="500" fill="#444441">via the Connector interest form</text>
+<line x1="1400" y1="1020" x2="1400" y2="1200" stroke="#444441" stroke-width="1.5" marker-end="url(#arrow)"/><text x="1415" y="1110" text-anchor="start" dominant-baseline="central" font-size="18" font-weight="700" fill="#2C2C2A">Yes</text><rect x="1230" y="1200" width="290" height="108" rx="12" fill="#B5D4F4" stroke="#185FA5" stroke-width="1.5"/><text x="1375.0" y="1230" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="700" fill="#042C53">Public listing access granted</text><text x="1375.0" y="1264" text-anchor="middle" dominant-baseline="central" font-size="15" font-weight="500" fill="#0C447C">Create and submit for Adobe review</text><rect x="540" y="1380" width="20" height="20" rx="4" fill="#CECBF6" stroke="#534AB7" stroke-width="1.5"/><text x="568" y="1395" font-size="15" font-weight="500" fill="#2C2C2A">Decision point</text><rect x="750" y="1380" width="20" height="20" rx="4" fill="#B5D4F4" stroke="#185FA5" stroke-width="1.5"/><text x="778" y="1395" font-size="15" font-weight="500" fill="#2C2C2A">Available</text><rect x="920" y="1380" width="20" height="20" rx="4" fill="#F7F7F3" stroke="#9B9A94" stroke-width="1.5"/><text x="948" y="1395" font-size="15" font-weight="500" fill="#2C2C2A">Next step</text></svg>
