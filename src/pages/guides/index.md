@@ -25,7 +25,7 @@ Adobe Express currently supports **Translate** connectors, which power the Trans
 
 **Before you start: check your account access**
 
-Enterprise Adobe accounts with a Developer or Administrator role get the Connector Playground and submission for private share links and internal listings by default. Personal Adobe accounts, and public listing for any account type, require approval through the [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pag3db7joqgtwXSOv/form) first, as shown below.
+Enterprise Adobe accounts with a Developer or Administrator role get the Connector Playground and submission for private share links and internal listings by default. Personal Adobe accounts, and public listing for any account type, require approval through the [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pagAZyFcQaWOKPouA/form) first, as shown below.
 
 ![Account access at a glance](img/connector-access-flow.svg)
 

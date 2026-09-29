@@ -31,14 +31,14 @@ Building and distributing a connector involves three distinct components:
 Before you continue, confirm you have the following:
 
 - **Account access to build and submit connectors.** Access depends on your account type:
-  - **Enterprise Adobe account:** Developer or Administrator role holders get access to the Connector Playground and connector submission for private share links and internal listings by default. Public listing requires approval through the [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pag3db7joqgtwXSOv/form).
-  - **Personal Adobe account:** Approval through the [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pag3db7joqgtwXSOv/form) is required before you can access the Connector Playground or the submission flow. Public listing is also gated through the same interest form approval process.
+  - **Enterprise Adobe account:** Developer or Administrator role holders get access to the Connector Playground and connector submission for private share links and internal listings by default. Public listing requires approval through the [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pagAZyFcQaWOKPouA/form).
+  - **Personal Adobe account:** Approval through the [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pagAZyFcQaWOKPouA/form) is required before you can access the Connector Playground or the submission flow. Public listing is also gated through the same interest form approval process.
 - **A Developer or Administrator role** assigned to your Adobe enterprise account by your organization's Adobe administrator. This role is required to enable Add-on Development mode in Adobe Express, which gives you access to the Connector Playground. If you do not have this role, request it from your admin before continuing. If you are unsure who your administrator is, see [How do I contact my org administrator?](https://helpx.adobe.com/enterprise/kb/contact-administrator.html).
 - **Node.js 18.8.0 or later**, required to run the TypeScript starter project. You can implement your connector in any language, but the starter project requires Node.js.
 
 ### Account access at a glance
 
-What your Adobe Express account can access depends on its type, role, and whether it's been approved through the [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pag3db7joqgtwXSOv/form):
+What your Adobe Express account can access depends on its type, role, and whether it's been approved through the [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pagAZyFcQaWOKPouA/form):
 
 | Account type | Connector Playground | Private share link | Internal listing | Public listing |
 |---|---|---|---|---|
@@ -118,7 +118,7 @@ Adobe Express runs over HTTPS and the Connector Playground calls your service di
 
 The Connector Playground is the tool you will use to configure your connector, generate the manifest, and test end-to-end once your service is running.
 
-If you have a Developer or Administrator role on an enterprise Adobe account, or your personal account has been approved through the [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pag3db7joqgtwXSOv/form), open the Playground directly:
+If you have a Developer or Administrator role on an enterprise Adobe account, or your personal account has been approved through the [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pagAZyFcQaWOKPouA/form), open the Playground directly:
 
 **[Open Connector Playground](https://www.adobe.com/go/connector-playground)**
 
@@ -130,7 +130,7 @@ This URL opens Adobe Express and launches the Connector Playground automatically
 
 **Connector Playground not visible?**
 
-The toggle is only available to enterprise Adobe accounts with a Developer or Administrator role, or personal accounts approved through the [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pag3db7joqgtwXSOv/form). If you believe your account should have access and the toggle is still missing, contact [express-connectors-support@adobe.com](mailto:express-connectors-support@adobe.com).
+The toggle is only available to enterprise Adobe accounts with a Developer or Administrator role, or personal accounts approved through the [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pagAZyFcQaWOKPouA/form). If you believe your account should have access and the toggle is still missing, contact [express-connectors-support@adobe.com](mailto:express-connectors-support@adobe.com).
 
 If the Go URL does not open the Playground automatically, you can navigate to it manually:
 

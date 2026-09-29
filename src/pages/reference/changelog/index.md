@@ -31,9 +31,9 @@ Adobe Express Translate Connectors is now **generally available (GA)**. This doc
 ### Changed
 
 - Enterprise Adobe accounts with a Developer or Administrator role get automatic access to the Connector Playground and connector submission for private link sharing and internal listings.
-- Personal Adobe accounts must request access using the new [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pag3db7joqgtwXSOv/form) before using the Connector Playground or submitting a connector.
+- Personal Adobe accounts must request access using the new [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pagAZyFcQaWOKPouA/form) before using the Connector Playground or submitting a connector.
 - Personal Adobe accounts approved through the interest form can now open a private share link, not just create one. This requirement applies to anyone opening the link, not only its creator: an enterprise account, or a personal account separately approved through the interest form, is required either way. See [Private share link: Treat the link like a credential](../../guides/submission/private-link.md#before-you-begin).
-- Public listing distribution remains gated for every account, enterprise or personal, and requires separate approval. Request access using the same [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pag3db7joqgtwXSOv/form).
+- Public listing distribution remains gated for every account, enterprise or personal, and requires separate approval. Request access using the same [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pagAZyFcQaWOKPouA/form).
 
 ## 2026-09-08
 
