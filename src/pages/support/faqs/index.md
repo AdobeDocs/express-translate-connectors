@@ -108,7 +108,7 @@ You can upload an existing `manifest.json` file using **More > Upload manifest**
 
 ## What is the Connector Playground?
 
-The Connector Playground is a browser-based tool built into Adobe Express that allows you to load a connector manifest, run the authentication flow, verify API responses, and test the translation experience. It is available to enterprise Adobe accounts with a Developer or Administrator role, and to personal accounts approved through the [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pag3db7joqgtwXSOv/form).
+The Connector Playground is a browser-based tool built into Adobe Express that allows you to load a connector manifest, run the authentication flow, verify API responses, and test the translation experience. It is available to enterprise Adobe accounts with a Developer or Administrator role, and to personal accounts approved through the [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pagAZyFcQaWOKPouA/form).
 
 ## How do I access the Connector Playground?
 
@@ -128,7 +128,7 @@ You have three distribution paths: an [internal listing](../../guides/submission
 
 ## Can I publish a connector from a personal Adobe account?
 
-Personal Adobe accounts must first request access using the [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pag3db7joqgtwXSOv/form). Once approved, personal accounts can create private share links and submit public listings, but cannot publish internal listings, because internal listings require an enterprise Adobe account.
+Personal Adobe accounts must first request access using the [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pagAZyFcQaWOKPouA/form). Once approved, personal accounts can create private share links and submit public listings, but cannot publish internal listings, because internal listings require an enterprise Adobe account.
 
 ## Can any Adobe Express user use a Translate connector?
 
@@ -162,7 +162,7 @@ The manifest is generated through the Connector Playground's form builder. You c
 
 ### Connector submissions require account access
 
-Submitting a connector (private link, internal listing, or public listing) requires an Adobe account with access. Enterprise Adobe accounts with a Developer or Administrator role get automatic access to private link and internal listing submission. Personal Adobe accounts must first request access using the [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pag3db7joqgtwXSOv/form). Public listings require separate approval for both personal and enterprise accounts. Submit the same [interest form](https://airtable.com/appiNBn2w6uT0cpkR/pag3db7joqgtwXSOv/form) so the team can review your use case. If **Connector** does not appear as an integration type in the **Create new integration** dialog, your account does not yet have access. See [Account access at a glance](../../guides/getting-started.md#account-access-at-a-glance) for a full breakdown by account type, or [Submit your Connector](../../guides/submission/index.md) to compare distribution options.
+Submitting a connector (private link, internal listing, or public listing) requires an Adobe account with access. Enterprise Adobe accounts with a Developer or Administrator role get automatic access to private link and internal listing submission. Personal Adobe accounts must first request access using the [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pagAZyFcQaWOKPouA/form). Public listings require separate approval for both personal and enterprise accounts. Submit the same [interest form](https://airtable.com/appiNBn2w6uT0cpkR/pagAZyFcQaWOKPouA/form) so the team can review your use case. If **Connector** does not appear as an integration type in the **Create new integration** dialog, your account does not yet have access. See [Account access at a glance](../../guides/getting-started.md#account-access-at-a-glance) for a full breakdown by account type, or [Submit your Connector](../../guides/submission/index.md) to compare distribution options.
 
 ### Adobe Admin Console administration details are not yet finalized
 

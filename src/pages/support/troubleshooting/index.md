@@ -319,7 +319,7 @@ After updating the provider, ask the user to close the popup, then select **Conn
 
 **Symptom:** You cannot find the Connector Playground toggle in Adobe Express.
 
-**Resolution:** The Connector Playground toggle is located in the **Add-on Development** section at the bottom of the Add-ons panel. To access it, click the **Add-ons** icon in the left rail, select the **Your add-ons** tab, and scroll to the bottom of the panel. The toggle is only visible to enterprise Adobe accounts with a Developer or Administrator role, or personal accounts approved through the [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pag3db7joqgtwXSOv/form). You must also be signed in with the **same Adobe account email** that has access. Signing in with a different account is the most common cause of this issue.
+**Resolution:** The Connector Playground toggle is located in the **Add-on Development** section at the bottom of the Add-ons panel. To access it, click the **Add-ons** icon in the left rail, select the **Your add-ons** tab, and scroll to the bottom of the panel. The toggle is only visible to enterprise Adobe accounts with a Developer or Administrator role, or personal accounts approved through the [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pagAZyFcQaWOKPouA/form). You must also be signed in with the **same Adobe account email** that has access. Signing in with a different account is the most common cause of this issue.
 
 You can also enable Add-on Development mode manually through Adobe Express Settings:
 

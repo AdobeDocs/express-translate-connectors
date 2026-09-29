@@ -32,7 +32,7 @@ Connector Playground lets you:
 
 ### Enable the Connector Playground toggle
 
-Connector Playground is available automatically to enterprise Adobe accounts with a **Developer** or **Administrator** role. Personal Adobe accounts must request access using the [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pag3db7joqgtwXSOv/form) before the Playground becomes available.
+Connector Playground is available automatically to enterprise Adobe accounts with a **Developer** or **Administrator** role. Personal Adobe accounts must request access using the [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pagAZyFcQaWOKPouA/form) before the Playground becomes available.
 
 Once your account has access, open the Playground directly:
 
@@ -46,7 +46,7 @@ The first time you launch Connector Playground, a **Developer Terms of Use (DTOU
 
 **Connector Playground not visible?**
 
-The toggle is only visible to enterprise Adobe accounts with a Developer or Administrator role, or personal accounts approved through the [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pag3db7joqgtwXSOv/form). If the problem persists, contact [express-connectors-support@adobe.com](mailto:express-connectors-support@adobe.com).
+The toggle is only visible to enterprise Adobe accounts with a Developer or Administrator role, or personal accounts approved through the [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pagAZyFcQaWOKPouA/form). If the problem persists, contact [express-connectors-support@adobe.com](mailto:express-connectors-support@adobe.com).
 
 If the direct URL does not open the Playground automatically, you can navigate to it manually:
 
