@@ -12,7 +12,7 @@ keywords:
   - serverless
 nav-title: App Builder Template
 sidebar: adobe-express-connectors
-last-updated: 2026-09-25
+last-updated: 2026-09-28
 hideBreadcrumbNav: true
 ---
 

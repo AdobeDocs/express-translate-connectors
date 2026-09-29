@@ -10,7 +10,7 @@ keywords:
 nav-title: Getting Started
 content_type: how-to
 sidebar: adobe-express-connectors
-last-updated: 2026-09-25
+last-updated: 2026-09-28
 hideBreadcrumbNav: true
 ---
 
@@ -30,8 +30,10 @@ Building and distributing a connector involves three distinct components:
 
 Before you continue, confirm you have the following:
 
-- **Account access to build and submit connectors.** Enterprise Adobe accounts with a Developer or Administrator role get automatic access to the Connector Playground and connector submission for private link sharing and internal listings. For public listings, submit the [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pag3db7joqgtwXSOv/form) so the team can review your use case. Personal Adobe accounts must also request access using the interest form before the Playground becomes available.
-- **A Developer or Administrator role** assigned to your Adobe account by your organization's Adobe administrator. This role is required to enable Add-on Development mode in Adobe Express, which gives you access to the Connector Playground. If you do not have this role, request it from your admin before continuing. If you are unsure who your administrator is, see [How do I contact my org administrator?](https://helpx.adobe.com/enterprise/kb/contact-administrator.html).
+- **Account access to build and submit connectors.** Access depends on your account type:
+  - **Enterprise Adobe account:** Developer or Administrator role holders get access to the Connector Playground and connector submission for private share links and internal listings by default. Public listing requires approval through the [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pag3db7joqgtwXSOv/form).
+  - **Personal Adobe account:** Approval through the [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pag3db7joqgtwXSOv/form) is required before you can access the Connector Playground or the submission flow. Public listing is also gated through the same interest form approval process.
+- **A Developer or Administrator role** assigned to your Adobe enterprise account by your organization's Adobe administrator. This role is required to enable Add-on Development mode in Adobe Express, which gives you access to the Connector Playground. If you do not have this role, request it from your admin before continuing. If you are unsure who your administrator is, see [How do I contact my org administrator?](https://helpx.adobe.com/enterprise/kb/contact-administrator.html).
 - **Node.js 18.8.0 or later**, required to run the TypeScript starter project. You can implement your connector in any language, but the starter project requires Node.js.
 
 ### Account access at a glance
@@ -40,9 +42,14 @@ What your Adobe Express account can access depends on its type, role, and whethe
 
 | Account type | Connector Playground | Private share link | Internal listing | Public listing |
 |---|---|---|---|---|
-| Personal, not yet approved | No access | No access | Not available | No access |
-| Personal, approved through the interest form | Available | Available | Not available | Available |
-| Enterprise, Developer or Administrator role | Always available | Always available | Always available | Requires separate approval through the interest form |
+| Personal | Available after interest form approval | Available after interest form approval | Not available | Available after interest form approval |
+| Enterprise, Developer or Administrator role | Always available | Always available | Always available | Available after interest form approval |
+
+![Account access at a glance](img/connector-access-flow.svg)
+
+<InlineAlert slots="heading, text" variant="info" />
+
+**Two exceptions to keep in mind**
 
 Internal listings are never available to personal accounts, regardless of approval status; they require an enterprise Adobe account. Public listings always require approval through the interest form, even for enterprise accounts that already have automatic access to the Playground and to private and internal submissions.
 

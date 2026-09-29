@@ -10,7 +10,7 @@ keywords:
 nav-title: FAQ
 content_type: faq
 sidebar: adobe-express-connectors
-last-updated: 2026-09-25
+last-updated: 2026-09-28
 hideBreadcrumbNav: true
 ---
 
@@ -60,13 +60,13 @@ No. Plain API Key (`"type": "API_KEY"`) is supported in the Connector Playground
 
 Your manifest declares `"type": "SECURE_API_KEY"` in `authConfig` and uses the `$secureApiKey` placeholder in `apiConfig.headers` for the header your service validates. When a translation request is triggered, Adobe Express routes it through Adobe's secure bridge. The bridge resolves the registered key for the user's Adobe org, injects it into the header you specified, and forwards the request to your service. The key never appears in the manifest and never reaches client devices.
 
-Currently, registration is handled by the Adobe team, and you don't need to submit a listing first. Create a connector integration in **Your integrations**, then open its **Settings** tab and click **Copy** to copy your Connector URL. Email [express-connectors-support@adobe.com](mailto:express-connectors-support@adobe.com) with that URL pasted as-is. Adobe derives your Connector ID from it, so you don't need to extract it yourself. (This ID is a different value from the `id` field in your connector manifest.) Include the Adobe org ID(s) the connector should be visible to in the same email. Separately, share the secure API key(s) mapped to those org IDs using a secure-sharing tool of your choice. Never paste key values into the email itself: raw keys should never be exposed over email. A self-managed UI for registering and rotating your own keys is planned for a future release.
+You add your key yourself, and you don't need to submit a listing first. Create a connector integration in **Your integrations**, open its **Settings** tab, and find the **Connector credentials** section. Click **Add credential**, select **API key**, click **Next**, then enter your key or secret and click **Save**. The value is encrypted and never exposed in your application code; you can't view it again after saving, but you can replace or delete it from the same section later. There's no email or wait for Adobe confirmation: the credential takes effect as soon as you save it.
 
 See [Endpoint Setup: Secure API Key](../../guides/endpoint-setup.md#option-3-secure-api-key) for the manifest configuration, backend validation sample, registration steps, and migration path from plain API Key.
 
 ## Can I test Secure API Key connectors end-to-end in the Connector Playground?
 
-No, not in this release. The Playground lets you select Secure API Key to generate a manifest with the correct schema, but it can't validate connectivity through Adobe's secure bridge yet. Configure and test your connector with API Key in the Playground first, then switch to Secure API Key and download the manifest before submitting it. See [Connector Playground: Secure API Key](../../guides/connector-playground.md#secure-api-key) and [Endpoint Setup: Secure API Key](../../guides/endpoint-setup.md#option-3-secure-api-key) for the full flow.
+No. The Playground lets you select Secure API Key to generate a manifest with the correct schema, but it can't validate connectivity through Adobe's secure bridge. Configure and test your connector with API Key in the Playground first, then switch to Secure API Key and download the manifest before submitting it. See [Connector Playground: Secure API Key](../../guides/connector-playground.md#secure-api-key) and [Endpoint Setup: Secure API Key](../../guides/endpoint-setup.md#option-3-secure-api-key) for the full flow.
 
 ## Do all connectors route through Adobe's bridge?
 
@@ -100,11 +100,11 @@ Use the form builder in the Connector Playground. It validates your manifest in 
 
 ## Do I edit the manifest JSON directly?
 
-No. Connector Playground generates the manifest through the form builder. The generated JSON is visible in the Playground, but direct editing is not supported in this release.
+No. Connector Playground generates the manifest through the form builder. The generated JSON is visible in the Playground, but direct editing isn't supported: the panel is read-only, and all changes go through the form builder.
 
 ## Can I upload or paste an existing manifest into the Playground?
 
-Not in this release. Manifest upload and paste are planned for a future release. Use the form builder to configure your connector.
+You can upload an existing `manifest.json` file using **More > Upload manifest**, which opens a file picker and replaces your current session's manifest after you confirm the replacement. Pasting or directly editing the manifest JSON is not supported: the manifest JSON panel is read-only, and all changes go through the form builder. See [Connector Playground: Upload a manifest](../../guides/connector-playground.md#upload-a-manifest) for the full flow.
 
 ## What is the Connector Playground?
 
@@ -156,9 +156,9 @@ The `formInput` entry that displays the locale picker in the Translate panel mus
 
 Do not use `"id": "tone"` for a `formInput` entry in `uiConfig`. This value conflicts with an internal identifier used by Adobe Express and will cause unexpected behavior in the Translate panel. Use `"id": "tones"` instead.
 
-### Connector Playground is the only authoring path
+### The manifest JSON panel is read-only
 
-The manifest is generated through Connector Playground. Direct manifest upload and editing are not supported in this release.
+The manifest is generated through the Connector Playground's form builder. You can upload an existing manifest to load it into a session with **More > Upload manifest**, but pasting or directly editing the JSON in the manifest panel is not supported in this release.
 
 ### Connector submissions require account access
 

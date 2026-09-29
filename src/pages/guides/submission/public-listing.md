@@ -12,7 +12,7 @@ keywords:
   - trader-details
 nav-title: Public listing
 sidebar: adobe-express-connectors
-last-updated: 2026-09-25
+last-updated: 2026-09-28
 hideBreadcrumbNav: true
 content_type: how-to
 faq:
@@ -32,14 +32,14 @@ faq:
 
 # Publish a Connector as a public listing
 
-A public listing submits your connector for Adobe review. After approval, your connector becomes available as an option in the Translate service dropdown for Adobe Express users in the enterprises where it is enabled. Use a public listing when you want broad distribution beyond your enterprise organization, including as a commercial offering. For other distribution paths, see [Submit your Connector](index.md).
+A public listing submits your connector for Adobe review. After approval, your connector becomes available as an option in the Translate service dropdown for Adobe Express users signed in with an enterprise account in the enterprises where it is enabled. Use a public listing when you want broad distribution beyond your enterprise organization, including as a commercial offering. For other distribution paths, see [Submit your Connector](index.md).
 
 ## Before you begin
 
-- **Account required:** Sign in with an enterprise Adobe account with the Administrator or Developer role in the [Adobe Admin Console](https://adminconsole.adobe.com/), or a personal Adobe account approved through the [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pag3db7joqgtwXSOv/form). Enterprise accounts without this role are blocked from all submission paths before reaching the submission UI.
-- **Public listing approval:** Public listing distribution remains gated for every account, enterprise or personal, separately from basic submission access. If it isn't enabled for your organization yet, the submission flow shows: "Public listing is not currently enabled for your organization. Contact us to request access." Request access using the same [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pag3db7joqgtwXSOv/form).
+- **Account required:** You can access the submission UI using either (1) an enterprise Adobe account with an Administrator or Developer role in the [Adobe Admin Console](https://adminconsole.adobe.com/), or (2) a personal Adobe account that has been approved through the [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pag3db7joqgtwXSOv/form). Enterprise accounts without this role are blocked from all submission paths before reaching the submission UI.
+- **Public listing approval:** Public listing is available to enterprise and personal-account developers who have been approved through the [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pag3db7joqgtwXSOv/form). If it isn't enabled for your account yet, choosing a public listing opens a **Request access to public listing** dialog that links to the same interest form. If you already submitted the form, no further action is needed while your request is under review.
 - **Test first:** Configure and validate your connector in the [Connector Playground](../connector-playground.md) before submitting.
-- **Plan for review:** Adobe reviews the connector, listing copy, screenshots, AI usage disclosure, monetization details, and publisher profile. What else reviewers need depends on your authentication type: Secure API Key connectors need an Adobe organization where your key is registered, plus test credentials to sign in to Express with that organization if needed. OAuth 2.0 PKCE connectors need test credentials for your own service to enter in the OAuth modal; the organization the reviewer signs in with doesn't matter. You'll provide these test details in the **Notes to reviewer** section of the listing. See [Get your connector ready for review](#get-your-connector-ready-for-review) for the steps.
+- **Plan for review:** Public listing has two separate approval stages. First, Adobe approves your access to public listing through the Connector interest form, as described above. Once you're approved, you can create and submit a public listing, which starts the second stage: Adobe reviews the connector itself, covering the connector, listing copy, screenshots, AI usage disclosure, monetization details, and publisher profile. What else reviewers need depends on your authentication type: Secure API Key connectors need an Adobe organization where your key is registered, plus test credentials to sign in to Express with that organization if needed. OAuth 2.0 PKCE connectors need test credentials for your own service to enter in the OAuth modal; the organization the reviewer signs in with doesn't matter. **Notes to reviewer** is a required field for every public listing, so you'll provide these test details there. See [Get your connector ready for review](#get-your-connector-ready-for-review) for the steps.
 - **Read the monetization guidelines:** Before filling in any payment fields, review the [connector monetization guidelines](monetization-guidelines.md).
 
 ## How a public listing differs from an internal listing
@@ -56,16 +56,16 @@ A public listing builds on the same submission workflow as an internal listing. 
 
 Complete these steps before you open the public listing submission form. What you need to gather depends on your connector's authentication type:
 
-- **Secure API Key connectors:** Unlike OAuth, a Secure API Key connector can only be used from Adobe organizations where that key is registered. Identify the Adobe organization(s) your connector should serve, get your Connector ID from the Settings tab of your integration (see [Step 4](index.md#step-4-note-your-connector-url)), and [register your Secure API Key with Adobe](index.md#register-your-secure-api-key-with-adobe) using both. If the review team needs to sign in to Express to test your connector, create test credentials in one of those organizations for them to use.
+- **Secure API Key connectors:** [Configure your Global API Key](index.md#register-your-secure-api-key-with-adobe) from your connector's Settings tab; this is required before the review team can use your connector at all. Separately, if the review team needs to sign in to Express to test your connector, create test credentials in an organization where you plan to enable visibility (see [Enable your connector for specific enterprises](#enable-your-connector-for-specific-enterprises)).
 - **OAuth 2.0 PKCE connectors:** Prepare a set of test credentials for your own service that the review team can enter in the OAuth modal when they connect. The Adobe organization the reviewer signs in with doesn't matter for OAuth connectors.
 
-Keep this information on hand. You'll add it to **Notes to reviewer** in [Step 8: Submit for review](#step-8-submit-for-review).
+Keep this information on hand. **Notes to reviewer** is required, and you'll add it in [Step 8: Submit for review](#step-8-submit-for-review).
 
 <InlineAlert slots="heading, text" variant="warning" />
 
 **Submit only after registration completes**
 
-If you submit for review before your Secure API Key registration is confirmed, the review team's test organization won't be able to use your connector, and your review will stall until registration completes.
+If you submit for review before configuring your Global API Key, the review team won't be able to use your connector, and your review will stall until you add it.
 
 ## Submission steps
 
@@ -196,10 +196,9 @@ Approval means your connector passed review. It is not yet visible to users unti
 
 ### Enable your connector for specific enterprises
 
-- **If you registered a Secure API Key before you submitted:** Adobe activates visibility for the same organization(s) you provided during registration (see [Register your Secure API Key with Adobe](index.md#register-your-secure-api-key-with-adobe)) once your listing is approved. You'll get a confirmation email when your connector is live, no further action needed.
-- **Otherwise:** Email the Adobe Express Translate Connectors team at [express-connectors-support@adobe.com](mailto:express-connectors-support@adobe.com) with your connector ID and the organization ID(s) or name(s) that should have access. Either identifier works: Adobe can resolve an organization ID from its name, or the reverse.
+Email the Adobe Express Translate Connectors team at [express-connectors-support@adobe.com](mailto:express-connectors-support@adobe.com) with your connector ID and the organization ID(s) or name(s) that should have access. Either identifier works: Adobe can resolve an organization ID from its name, or the reverse. Configuring your Global API Key (see [Register your Secure API Key with Adobe](index.md#register-your-secure-api-key-with-adobe)) does not grant visibility on its own.
 
-To add organizations beyond the ones you originally registered, use the same email address with your connector ID and the additional organization ID(s) or name(s).
+To add organizations beyond the ones you originally requested, use the same email address with your connector ID and the additional organization ID(s) or name(s).
 
 After Adobe enables the connector, it appears as an option in the Translate service dropdown for Adobe Express users in those enterprises.
 
@@ -221,7 +220,7 @@ Public-listing-specific issues are listed below. For shared issues (manifest sch
 | **Public listing** card is missing from the **Publish** tab | Account does not yet have connector submission access, or public listing hasn't been enabled for your organization | Request access using the [Connector interest form](https://airtable.com/appiNBn2w6uT0cpkR/pag3db7joqgtwXSOv/form), or contact the Adobe Express Translate Connectors team. |
 | **Submit for review** button stays disabled | Required fields are missing or invalid | Open the **Jump to** dropdown. Incomplete sections aren't marked with a checkmark. |
 | Review reports monetization mismatch | Pricing in your listing doesn't match what users see in checkout | Update either the listing or the checkout to match, then resubmit. |
-| Reviewer can't sign in or test your connector | Notes to reviewer is missing the Express organization or test credentials, or (for Secure API Key connectors) the key isn't yet registered for the test organization | Add the missing information to **Notes to reviewer** and confirm your Secure API Key registration if applicable (see [Get your connector ready for review](#get-your-connector-ready-for-review)), then resubmit. |
+| Reviewer can't sign in or test your connector | Notes to reviewer is missing the Express organization or test credentials, or (for Secure API Key connectors) the Global API Key credential hasn't been configured yet | Add the missing information to **Notes to reviewer** and confirm you've configured your Global API Key credential if applicable (see [Get your connector ready for review](#get-your-connector-ready-for-review)), then resubmit. |
 | Connector not appearing in the Translate dropdown after approval | Enablement is still being processed | Allow a few business days after receiving approval. If the connector still has not appeared, contact the Adobe Express Translate Connectors team at [express-connectors-support@adobe.com](mailto:express-connectors-support@adobe.com). |
 
 ## Related documentation

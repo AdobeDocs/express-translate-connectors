@@ -13,7 +13,7 @@ keywords:
   - trader-details
 nav-title: Internal listing
 sidebar: adobe-express-connectors
-last-updated: 2026-09-25
+last-updated: 2026-09-28
 hideBreadcrumbNav: true
 ai_assistant_note: >
   Use this document when a developer wants to publish their Adobe Express Translate Connector as an internal listing for distribution to users in their enterprise organization. It covers field requirements, character limits, asset formats, validation rules, the end-to-end submission flow opened from Your integrations in Adobe Express, and the requirement to sign in with an enterprise (organization) account because personal Adobe accounts cannot publish internal listings. Prefer this document over the Submit your Connector overview when the developer has already chosen the internal listing path.
@@ -48,13 +48,13 @@ See [Before you submit](index.md#before-you-submit) for the account, role, and t
 - **Where it publishes:** Internal listings appear as an option in the Translate service dropdown inside Adobe Express for users signed in to the same enterprise organization as the publisher.
 - **What's validated:** Adobe does not review the connector itself for internal listings. Adobe validates your publisher profile, your manifest's schema and unique identifiers, and runs an operational check against your connector's endpoint.
 - **Prepare your assets and metadata:** Internal listings collect the full [Listing field reference](index.md#listing-field-reference) except the Support email address, End User License Agreement (EULA), AI usage details, and monetization details. Gather your icon, manifest, screenshots, listing copy, and publisher and trader details before you open the submission form.
-- **Secure API Key registration:** If your connector uses Secure API Key authentication, register your key with Adobe using the organization(s) it should serve and your connector's Connector ID, available from the Settings tab as soon as you create your integration (see [Step 4](index.md#step-4-note-your-connector-url)). It's required regardless of listing type. See [Register your Secure API Key with Adobe](index.md#register-your-secure-api-key-with-adobe).
+- **Secure API Key credential:** If your connector uses Secure API Key authentication, add your key as a credential from your connector's **Settings** tab. It's required regardless of listing type. See [Register your Secure API Key with Adobe](index.md#register-your-secure-api-key-with-adobe).
 
 <InlineAlert slots="heading, text" variant="warning" />
 
 **This listing won't work until registration completes**
 
-An internal listing isn't reviewed by Adobe, but a Secure API Key connector still won't work for your organization's users until Adobe confirms your key registration.
+An internal listing isn't reviewed by Adobe, but a Secure API Key connector still won't work for your organization's users until you've added your credential.
 
 ## Submission steps
 
@@ -102,7 +102,7 @@ Upload your connector manifest as a `.json` file, select every language your con
 
 ![Languages selection grid and Release notes field](img/internal-connector-listing-details-langs-release-notes.png)
 
-If your connector uses Secure API Key authentication, you still need to register your key with Adobe. This is required regardless of listing type. See [Register your Secure API Key with Adobe](index.md#register-your-secure-api-key-with-adobe).
+If your connector uses Secure API Key authentication, you still need to add your credential from the connector's **Settings** tab. This is required regardless of listing type. See [Register your Secure API Key with Adobe](index.md#register-your-secure-api-key-with-adobe).
 
 ### Step 4: Confirm your Publisher profile and Trader details
 

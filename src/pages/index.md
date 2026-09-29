@@ -7,7 +7,7 @@ keywords:
   - adobe-express
   - connectors
 nav-title: Guides
-last-updated: 2026-09-25
+last-updated: 2026-09-28
 hideBreadcrumbNav: true
 ---
 
