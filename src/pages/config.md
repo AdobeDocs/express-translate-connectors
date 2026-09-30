@@ -1,7 +1,8 @@
 - pathPrefix:
     - /express/translate-connectors/docs/    
 
-- pages:      
+- pages:
+    - [Adobe Express Translate Connectors](https://developer.adobe.com/express/translate-connectors/)  
     - [Guides](guides/index.md)
     - [References](reference/index.md)
     - [Support](support/index.md)    
